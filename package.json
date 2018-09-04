@@ -7,7 +7,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "data": "babel-node ./data/app.js --presets es2015,stage-2"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,14 @@
   },
   "homepage": "https://github.com/efe-blue/atype#readme",
   "dependencies": {
-    "commander": "^2.17.1"
+    "cheerio": "^1.0.0-rc.2",
+    "commander": "^2.17.1",
+    "express": "^4.16.3",
+    "superagent": "^3.8.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
   }
 }
