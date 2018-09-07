@@ -11,7 +11,7 @@
       },
       {
         "title": "uploadFile",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_uploadFile/#uploadFile",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_uploadfile/#uploadFile",
         "param": [
           "url",
           "filePath",
@@ -20,53 +20,57 @@
       },
       {
         "title": "downloadFile",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_uploadFile/#downloadFile",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_uploadfile/#downloadFile",
         "param": [
           "url"
         ]
       },
       {
         "title": "connectSocket",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_webSocket/#connectSocket",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#connectSocket",
         "param": [
           "url"
         ]
       },
       {
         "title": "onSocketOpen",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_webSocket/#onSocketOpen",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketOpen",
         "param": []
       },
       {
         "title": "onSocketError",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_webSocket/#onSocketError",
-        "param": []
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketError",
+        "param": [
+          "data"
+        ]
       },
       {
         "title": "sendSocketMessage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_webSocket/#sendSocketMessage",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#sendSocketMessage",
         "param": [
           "data"
         ]
       },
       {
         "title": "onSocketMessage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_webSocket/#onSocketMessage",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketMessage",
         "param": []
       },
       {
         "title": "closeSocket",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_webSocket/#clouseSocketMessage",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#clouseSocketMessage",
         "param": []
       },
       {
         "title": "onSocketClose",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_webSocket/#onSocketClose",
-        "param": []
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketClose",
+        "param": [
+          "data"
+        ]
       },
       {
         "title": "SocketTask",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_webSocket/#SocketTask",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#SocketTask",
         "param": [
           "data"
         ]
@@ -217,13 +221,23 @@
       },
       {
         "title": "getBackgroundAudioManager",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_backgroundAudioManager/#getBackgroundAudioManager",
-        "param": []
+        "href": "https://smartprogram.baidu.com/docs/develop/api/media_backgroundaudiomanager/#getBackgroundAudioManager",
+        "param": [
+          "duration",
+          "currentTime",
+          "paused",
+          "buffered"
+        ]
       },
       {
         "title": "createInnerAudioContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_createInnerAudioContext/#createInnerAudioContext",
-        "param": []
+        "href": "https://smartprogram.baidu.com/docs/develop/api/media_createinneraudiocontext/#createInnerAudioContext",
+        "param": [
+          "duration",
+          "currentTime",
+          "paused",
+          "buffered"
+        ]
       },
       {
         "title": "chooseVideo",
@@ -241,17 +255,17 @@
       },
       {
         "title": "createVideoContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_videoContext/#createVideoContext",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/media_videocontext/#createVideoContext",
         "param": []
       },
       {
         "title": "createLivePlayerContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_livePlayerContext/#createLivePlayerContext",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/media_liveplayercontext/#createLivePlayerContext",
         "param": []
       },
       {
         "title": "createCameraContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_cameraContext/#createCameraContext",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/media_cameracontext/#createCameraContext",
         "param": []
       }
     ]
@@ -814,7 +828,7 @@
       },
       {
         "title": "pageScrollTo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_pageScrollTo/#pageScrollTo",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/show_pagescrollto/#pageScrollTo",
         "param": [
           "scrollTop"
         ]
@@ -1018,12 +1032,12 @@
     "content": [
       {
         "title": "getExtConfig",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/getExtConfig/#getExtConfig",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/getextconfig/#getExtConfig",
         "param": []
       },
       {
         "title": "getExtConfigSync",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/getExtConfig/#getExtConfigSync",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/getextconfig/#getExtConfigSync",
         "param": []
       }
     ]
@@ -1050,17 +1064,17 @@
       },
       {
         "title": "getSwanId",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_userInfo/#getSwanId",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/open_userinfo/#getSwanId",
         "param": []
       },
       {
         "title": "getUserInfo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_userInfo/#getUserInfo",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/open_userinfo/#getUserInfo",
         "param": []
       },
       {
         "title": "openSetting",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_userInfo/#openSetting",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/open_setting/#openSetting",
         "param": []
       },
       {
@@ -1075,7 +1089,7 @@
       },
       {
         "title": "chooseAddress",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_chooseAddress/#chooseAddress",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/open_chooseaddress/#chooseAddress",
         "param": []
       },
       {
@@ -1087,19 +1101,19 @@
       },
       {
         "title": "chooseInvoiceTitle",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_chooseInvoiceTitle/#chooseInvoiceTitle",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/open_chooseinvoicetitle/#chooseInvoiceTitle",
         "param": []
       },
       {
         "title": "navigateToSmartProgram",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_smartProgram/#navigateToSmartProgram",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/open_smartprogram/#navigateToSmartProgram",
         "param": [
           "appKey"
         ]
       },
       {
         "title": "navigateBackSmartProgram",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_smartProgram/#navigateBackSmartProgram",
+        "href": "https://smartprogram.baidu.com/docs/develop/api/open_smartprogram/#navigateBackSmartProgram",
         "param": []
       }
     ]
