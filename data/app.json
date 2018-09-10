@@ -40,9 +40,7 @@
       {
         "title": "onSocketError",
         "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketError",
-        "param": [
-          "data"
-        ]
+        "param": []
       },
       {
         "title": "sendSocketMessage",
@@ -64,9 +62,7 @@
       {
         "title": "onSocketClose",
         "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketClose",
-        "param": [
-          "data"
-        ]
+        "param": []
       },
       {
         "title": "SocketTask",
@@ -426,9 +422,7 @@
       {
         "title": "createCanvasContext",
         "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#createCanvasContext",
-        "param": [
-          "canvasId"
-        ]
+        "param": []
       },
       {
         "title": "canvasToTempFilePath(OBJECT, this)",
@@ -678,10 +672,7 @@
       {
         "title": "hideLoading",
         "href": "https://smartprogram.baidu.com/docs/develop/api/show_toast/#hideToast",
-        "param": [
-          "title",
-          "content"
-        ]
+        "param": []
       },
       {
         "title": "showModal",
@@ -708,18 +699,12 @@
       {
         "title": "showNavigationBarLoading",
         "href": "https://smartprogram.baidu.com/docs/develop/api/show_navigationbar/#showNavigationBarLoading",
-        "param": [
-          "frontColor",
-          "backgroundColor"
-        ]
+        "param": []
       },
       {
         "title": "hideNavigationBarLoading",
         "href": "https://smartprogram.baidu.com/docs/develop/api/show_navigationbar/#hideNavigationBarLoading",
-        "param": [
-          "frontColor",
-          "backgroundColor"
-        ]
+        "param": []
       },
       {
         "title": "setNavigationBarColor",

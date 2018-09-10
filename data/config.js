@@ -1,3 +1,8 @@
+/**
+ * @file app.js
+ * @author caixiaowen
+ */
+
 export const DICT = {
     host: 'https://smartprogram.baidu.com',
     // 初始页面路径
@@ -10,9 +15,8 @@ export const DICT = {
     paramTable: 'tbody > tr',
     // 现在存放API都是a标签
     apiHtml: 'a',
-    // API大多为h2标题，部分为h3标题
+    // API为h2标题
     apiTitle: 'h2',
-    apiTitleAnother: 'h3',
     // 参数放在表格里
     apiParamTable: 'table',
     // 表格第一列为参数名
