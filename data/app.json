@@ -1,1104 +1,988 @@
 [
   {
-    "title": "/docs/develop/api/net/",
+    "categoryName": "网络",
     "content": [
       {
-        "title": "request",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_request/#request",
-        "param": [
-          "url"
-        ]
-      },
-      {
-        "title": "uploadFile",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_uploadfile/#uploadFile",
-        "param": [
-          "url",
-          "filePath",
-          "name"
-        ]
-      },
-      {
-        "title": "downloadFile",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_uploadfile/#downloadFile",
-        "param": [
-          "url"
-        ]
-      },
-      {
-        "title": "connectSocket",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#connectSocket",
-        "param": [
-          "url"
-        ]
-      },
-      {
-        "title": "onSocketOpen",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketOpen",
+        "subCategory": "请求",
+        "apiName": "request",
+        "apiUrl": "/docs/develop/api/net_request/#request/",
+        "id": "request",
         "param": []
       },
       {
-        "title": "onSocketError",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketError",
+        "subCategory": "上传、下载",
+        "apiName": "uploadFile",
+        "apiUrl": "/docs/develop/api/net_uploadfile/#uploadFile/",
+        "id": "uploadFile",
         "param": []
       },
       {
-        "title": "sendSocketMessage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#sendSocketMessage",
-        "param": [
-          "data"
-        ]
-      },
-      {
-        "title": "onSocketMessage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketMessage",
+        "subCategory": "上传、下载",
+        "apiName": "downloadFile",
+        "apiUrl": "/docs/develop/api/net_uploadfile/#downloadFile/",
+        "id": "downloadFile",
         "param": []
       },
       {
-        "title": "closeSocket",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#clouseSocketMessage",
+        "subCategory": "WebSocket",
+        "apiName": "connectSocket",
+        "apiUrl": "/docs/develop/api/net_websocket/#connectSocket/",
+        "id": "connectSocket",
         "param": []
       },
       {
-        "title": "onSocketClose",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#onSocketClose",
+        "subCategory": "WebSocket",
+        "apiName": "onSocketOpen",
+        "apiUrl": "/docs/develop/api/net_websocket/#onSocketOpen/",
+        "id": "onSocketOpen",
         "param": []
       },
       {
-        "title": "SocketTask",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/net_websocket/#SocketTask",
-        "param": [
-          "data"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "/docs/develop/api/ai/",
-    "content": [
-      {
-        "title": "ocrIdCard",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_ocr/#ocrIdCard",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "ocrBankCard",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_ocr/#ocrBankCard",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "ocrDrivingLicense",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_ocr/#ocrDrivingLicense",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "ocrVehicleLicense",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_ocr/#ocrVehicleLicense",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "textReview",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_text/#textReview",
-        "param": [
-          "content"
-        ]
-      },
-      {
-        "title": "textToAudio",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_audio/#textToAudio",
-        "param": [
-          "tex",
-          "ctp",
-          "lan"
-        ]
-      },
-      {
-        "title": "imageAudit",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_audit/#imageAudit",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "advancedGeneralIdentify",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_classify/#advancedGeneralIdentify",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "objectDetectIdentify",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_classify/#objectDetectIdentify",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "carClassify",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_classify/#carClassify",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "dishClassify",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_classify/#dishClassify",
-        "param": [
-          "image",
-          "filter_threshold"
-        ]
-      },
-      {
-        "title": "logoClassify",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_classify/#logoClassify",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "animalClassify",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_classify/#animalClassify",
-        "param": [
-          "image"
-        ]
-      },
-      {
-        "title": "plantClassify",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/ai_classify/#plantClassify",
-        "param": [
-          "image"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "/docs/develop/api/media/",
-    "content": [
-      {
-        "title": "chooseImage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_image/#previewImage",
-        "param": [
-          "success"
-        ]
-      },
-      {
-        "title": "previewImage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_image/#previewImage",
-        "param": [
-          "urls"
-        ]
-      },
-      {
-        "title": "getImageInfo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_image/#getImageInfo",
-        "param": [
-          "src"
-        ]
-      },
-      {
-        "title": "saveImageToPhotosAlbum",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_image/#saveImageToPhotosAlbum",
-        "param": [
-          "filePath"
-        ]
-      },
-      {
-        "title": "getRecorderManager",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_recorder/#getRecorderManager",
+        "subCategory": "WebSocket",
+        "apiName": "onSocketError",
+        "apiUrl": "/docs/develop/api/net_websocket/#onSocketError/",
+        "id": "onSocketError",
         "param": []
       },
       {
-        "title": "getBackgroundAudioManager",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_backgroundaudiomanager/#getBackgroundAudioManager",
-        "param": [
-          "duration",
-          "currentTime",
-          "paused",
-          "buffered"
-        ]
-      },
-      {
-        "title": "createInnerAudioContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_createinneraudiocontext/#createInnerAudioContext",
-        "param": [
-          "duration",
-          "currentTime",
-          "paused",
-          "buffered"
-        ]
-      },
-      {
-        "title": "chooseVideo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_video/#chooseVideo",
-        "param": [
-          "success"
-        ]
-      },
-      {
-        "title": "saveVideoToPhotosAlbum",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_video/#saveVideoToPhotosAlbum",
-        "param": [
-          "filePath"
-        ]
-      },
-      {
-        "title": "createVideoContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_videocontext/#createVideoContext",
+        "subCategory": "WebSocket",
+        "apiName": "sendSocketMessage",
+        "apiUrl": "/docs/develop/api/net_websocket/#sendSocketMessage/",
+        "id": "sendSocketMessage",
         "param": []
       },
       {
-        "title": "createLivePlayerContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_liveplayercontext/#createLivePlayerContext",
+        "subCategory": "WebSocket",
+        "apiName": "onSocketMessage",
+        "apiUrl": "/docs/develop/api/net_websocket/#onSocketMessage/",
+        "id": "onSocketMessage",
         "param": []
       },
       {
-        "title": "createCameraContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/media_cameracontext/#createCameraContext",
+        "subCategory": "WebSocket",
+        "apiName": "closeSocket",
+        "apiUrl": "/docs/develop/api/net_websocket/#closeSocket/",
+        "id": "closeSocket",
+        "param": []
+      },
+      {
+        "subCategory": "WebSocket",
+        "apiName": "onSocketClose",
+        "apiUrl": "/docs/develop/api/net_websocket/#onSocketClose/",
+        "id": "onSocketClose",
         "param": []
       }
     ]
   },
   {
-    "title": "/docs/develop/api/file/",
+    "categoryName": "AI",
     "content": [
       {
-        "title": "saveFile",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/file_save/#saveFile",
-        "param": [
-          "tempFilePath"
-        ]
-      },
-      {
-        "title": "getFileInfo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/file_save/#getFileInfo",
-        "param": [
-          "filePath"
-        ]
-      },
-      {
-        "title": "getSavedFileList",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/file_save/#getSavedFileList",
+        "subCategory": "文字识别",
+        "apiName": "ocrIdCard",
+        "apiUrl": "/docs/develop/api/ai_ocr/#ocrIdCard/",
+        "id": "ocrIdCard",
         "param": []
       },
       {
-        "title": "getSavedFileInfo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/file_save/#getSavedFileInfo",
-        "param": [
-          "filePath"
-        ]
-      },
-      {
-        "title": "removeSavedFile",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/file_remove/#removeSavedFile",
-        "param": [
-          "filePath"
-        ]
-      },
-      {
-        "title": "openDocument",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/file_open/#openDocument",
-        "param": [
-          "filePath"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "/docs/develop/api/storage/",
-    "content": [
-      {
-        "title": "setStorage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_save/#setStorage",
-        "param": [
-          "key",
-          "data"
-        ]
-      },
-      {
-        "title": "setStorageSync",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_save/#setStorageSync",
-        "param": [
-          "key",
-          "data"
-        ]
-      },
-      {
-        "title": "getStorage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_save/#getStorage",
-        "param": [
-          "key",
-          "success"
-        ]
-      },
-      {
-        "title": "getStorageSync",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_save/#getStorageSync",
-        "param": [
-          "key"
-        ]
-      },
-      {
-        "title": "getStorageInfo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_save/#getStorageInfo",
-        "param": [
-          "success"
-        ]
-      },
-      {
-        "title": "getStorageInfoSync",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_save/#getStorageInfoSync",
+        "subCategory": "文字识别",
+        "apiName": "ocrBankCard",
+        "apiUrl": "/docs/develop/api/ai_ocr/#ocrBankCard/",
+        "id": "ocrBankCard",
         "param": []
       },
       {
-        "title": "removeStorage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_remove/#removeStorage",
-        "param": [
-          "key",
-          "success"
-        ]
+        "subCategory": "文字识别",
+        "apiName": "ocrDrivingLicense",
+        "apiUrl": "/docs/develop/api/ai_ocr/#ocrDrivingLicense/",
+        "id": "ocrDrivingLicense",
+        "param": []
       },
       {
-        "title": "removeStorageSync",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_remove/#removeStorageSync",
-        "param": [
-          "key"
-        ]
+        "subCategory": "文字识别",
+        "apiName": "ocrVehicleLicense",
+        "apiUrl": "/docs/develop/api/ai_ocr/#ocrVehicleLicense/",
+        "id": "ocrVehicleLicense",
+        "param": []
       },
       {
-        "title": "clearStorage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_remove/#clearStorage",
-        "param": [
-          "success"
-        ]
+        "subCategory": "文本审核",
+        "apiName": "textReview",
+        "apiUrl": "/docs/develop/api/ai_text/#textReview/",
+        "id": "textReview",
+        "param": []
       },
       {
-        "title": "clearStorageSync",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/storage_remove/#clearStorageSync",
+        "subCategory": "语音合成",
+        "apiName": "textToAudio",
+        "apiUrl": "/docs/develop/api/ai_audio/#textToAudio/",
+        "id": "textToAudio",
+        "param": []
+      },
+      {
+        "subCategory": "图像审核",
+        "apiName": "imageAudit",
+        "apiUrl": "/docs/develop/api/ai_audit/#imageAudit/",
+        "id": "imageAudit",
+        "param": []
+      },
+      {
+        "subCategory": "图像识别",
+        "apiName": "advancedGeneralIdentify",
+        "apiUrl": "/docs/develop/api/ai_classify/#advancedGeneralIdentify/",
+        "id": "advancedGeneralIdentify",
+        "param": []
+      },
+      {
+        "subCategory": "图像识别",
+        "apiName": "objectDetectIdentify",
+        "apiUrl": "/docs/develop/api/ai_classify/#objectDetectIdentify/",
+        "id": "objectDetectIdentify",
+        "param": []
+      },
+      {
+        "subCategory": "图像识别",
+        "apiName": "carClassify",
+        "apiUrl": "/docs/develop/api/ai_classify/#carClassify/",
+        "id": "carClassify",
+        "param": []
+      },
+      {
+        "subCategory": "图像识别",
+        "apiName": "dishClassify",
+        "apiUrl": "/docs/develop/api/ai_classify/#dishClassify/",
+        "id": "dishClassify",
+        "param": []
+      },
+      {
+        "subCategory": "图像识别",
+        "apiName": "logoClassify",
+        "apiUrl": "/docs/develop/api/ai_classify/#logoClassify/",
+        "id": "logoClassify",
+        "param": []
+      },
+      {
+        "subCategory": "图像识别",
+        "apiName": "animalClassify",
+        "apiUrl": "/docs/develop/api/ai_classify/#animalClassify/",
+        "id": "animalClassify",
+        "param": []
+      },
+      {
+        "subCategory": "图像识别",
+        "apiName": "plantClassify",
+        "apiUrl": "/docs/develop/api/ai_classify/#plantClassify/",
+        "id": "plantClassify",
+        "param": []
+      },
+      {
+        "subCategory": "语音识别",
+        "apiName": "getVoiceRecognizer",
+        "apiUrl": "/docs/develop/api/ai_voice/#getVoiceRecognizer/",
+        "id": "getVoiceRecognizer",
         "param": []
       }
     ]
   },
   {
-    "title": "/docs/develop/api/location/",
+    "categoryName": "媒体",
     "content": [
       {
-        "title": "getLocation",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/location_get/#getLocation",
-        "param": [
-          "success"
-        ]
-      },
-      {
-        "title": "chooseLocation",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/location_get/#chooseLocation",
+        "subCategory": "图片",
+        "apiName": "chooseImage",
+        "apiUrl": "/docs/develop/api/media_image/#chooseImage/",
+        "id": "chooseImage",
         "param": []
       },
       {
-        "title": "openLocation",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/location_open/#openLocation",
-        "param": [
-          "latitude",
-          "longitude"
-        ]
+        "subCategory": "图片",
+        "apiName": "previewImage",
+        "apiUrl": "/docs/develop/api/media_image/#previewImage/",
+        "id": "previewImage",
+        "param": []
       },
       {
-        "title": "createMapContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/location_map/#createMapContext",
+        "subCategory": "图片",
+        "apiName": "getImageInfo",
+        "apiUrl": "/docs/develop/api/media_image/#getImageInfo/",
+        "id": "getImageInfo",
+        "param": []
+      },
+      {
+        "subCategory": "图片",
+        "apiName": "saveImageToPhotosAlbum",
+        "apiUrl": "/docs/develop/api/media_image/#saveImageToPhotosAlbum/",
+        "id": "saveImageToPhotosAlbum",
+        "param": []
+      },
+      {
+        "subCategory": "录音管理",
+        "apiName": "getRecorderManager",
+        "apiUrl": "/docs/develop/api/media_recorder/#getRecorderManager/",
+        "id": "getRecorderManager",
+        "param": []
+      },
+      {
+        "subCategory": "背景音频管理播放",
+        "apiName": "getBackgroundAudioManager",
+        "apiUrl": "/docs/develop/api/media_backgroundaudiomanager/#getBackgroundAudioManager/",
+        "id": "getBackgroundAudioManager",
+        "param": []
+      },
+      {
+        "subCategory": "音频组件控制",
+        "apiName": "createInnerAudioContext",
+        "apiUrl": "/docs/develop/api/media_createinneraudiocontext/#createInnerAudioContext/",
+        "id": "createInnerAudioContext",
+        "param": []
+      },
+      {
+        "subCategory": "音频组件控制",
+        "apiName": "setInnerAudioOption",
+        "apiUrl": "/docs/develop/api/media_createinneraudiocontext/#setInnerAudioOption/",
+        "id": "setInnerAudioOption",
+        "param": []
+      },
+      {
+        "subCategory": "视频",
+        "apiName": "chooseVideo",
+        "apiUrl": "/docs/develop/api/media_video/#chooseVideo/",
+        "id": "chooseVideo",
+        "param": []
+      },
+      {
+        "subCategory": "视频",
+        "apiName": "saveVideoToPhotosAlbum",
+        "apiUrl": "/docs/develop/api/media_video/#saveVideoToPhotosAlbum/",
+        "id": "saveVideoToPhotosAlbum",
+        "param": []
+      },
+      {
+        "subCategory": "视频组件控制",
+        "apiName": "createVideoContext",
+        "apiUrl": "/docs/develop/api/media_videocontext/#createVideoContext/",
+        "id": "createVideoContext",
+        "param": []
+      },
+      {
+        "subCategory": "直播组件控制",
+        "apiName": "createLivePlayerContext",
+        "apiUrl": "/docs/develop/api/media_liveplayercontext/#createLivePlayerContext/",
+        "id": "createLivePlayerContext",
+        "param": []
+      },
+      {
+        "subCategory": "相机组件控制",
+        "apiName": "createCameraContext",
+        "apiUrl": "/docs/develop/api/media_cameracontext/#createCameraContext/",
+        "id": "createCameraContext",
+        "param": []
+      },
+      {
+        "subCategory": "AR 相机组件控制",
+        "apiName": "createARCameraContext",
+        "apiUrl": "/docs/develop/api/media_arcameracontext/#createARCameraContext/",
+        "id": "createARCameraContext",
         "param": []
       }
     ]
   },
   {
-    "title": "/docs/develop/api/show/",
+    "categoryName": "文件",
     "content": [
       {
-        "title": "createCanvasContext",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#createCanvasContext",
+        "subCategory": "保存、获取文件",
+        "apiName": "saveFile",
+        "apiUrl": "/docs/develop/api/file_save/#saveFile/",
+        "id": "saveFile",
         "param": []
       },
       {
-        "title": "canvasToTempFilePath(OBJECT, this)",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasToTempFilePath-OBJECT-this",
-        "param": [
-          "canvasId"
-        ]
-      },
-      {
-        "title": "canvasContext.setFillStyle",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setFillStyle",
-        "param": [
-          "color"
-        ]
-      },
-      {
-        "title": "canvasContext.setStrokeStyle",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setStrokeStyle",
-        "param": [
-          "color"
-        ]
-      },
-      {
-        "title": "canvasContext.setShadow",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setShadow",
+        "subCategory": "保存、获取文件",
+        "apiName": "getFileInfo",
+        "apiUrl": "/docs/develop/api/file_save/#getFileInfo/",
+        "id": "getFileInfo",
         "param": []
       },
       {
-        "title": "canvasContext.createLinearGradient",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-createLinearGradient",
+        "subCategory": "保存、获取文件",
+        "apiName": "getSavedFileList",
+        "apiUrl": "/docs/develop/api/file_save/#getSavedFileList/",
+        "id": "getSavedFileList",
         "param": []
       },
       {
-        "title": "canvasContext.createCircularGradient",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-createCircularGradient",
+        "subCategory": "保存、获取文件",
+        "apiName": "getSavedFileInfo",
+        "apiUrl": "/docs/develop/api/file_save/#getSavedFileInfo/",
+        "id": "getSavedFileInfo",
         "param": []
       },
       {
-        "title": "canvasContext.addColorStop",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-addColorStop",
+        "subCategory": "删除文件",
+        "apiName": "removeSavedFile",
+        "apiUrl": "/docs/develop/api/file_remove/#removeSavedFile/",
+        "id": "removeSavedFile",
         "param": []
       },
       {
-        "title": "canvasContext.setLineWidth",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setLineWidth",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setLineCap",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setLineCap",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setLineJoin",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setLineJoin",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setLineDash",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setLineDash",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setMiterLimit",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setMiterLimit",
-        "param": []
-      },
-      {
-        "title": "canvasContext.rec",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-rect",
-        "param": []
-      },
-      {
-        "title": "canvasContext.fillRect",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-fillRect",
-        "param": []
-      },
-      {
-        "title": "canvasContext.strokeRect",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-strokeRect",
-        "param": []
-      },
-      {
-        "title": "canvasContext.clearRect",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-clearRect",
-        "param": []
-      },
-      {
-        "title": "canvasContext.fill",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-fill",
-        "param": []
-      },
-      {
-        "title": "canvasContext.stroke",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-stroke",
-        "param": []
-      },
-      {
-        "title": "canvasContext.beginPath",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-beginPath",
-        "param": []
-      },
-      {
-        "title": "canvasContext.closePath",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-closePath",
-        "param": []
-      },
-      {
-        "title": "canvasContext.moveTo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-moveTo",
-        "param": []
-      },
-      {
-        "title": "canvasContext.lineTo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-lineTo",
-        "param": []
-      },
-      {
-        "title": "canvasContext.arc",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-arc",
-        "param": []
-      },
-      {
-        "title": "canvasContext.scale",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-scale",
-        "param": []
-      },
-      {
-        "title": "canvasContext.rotate",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-rotate",
-        "param": []
-      },
-      {
-        "title": "canvasContext.translate",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-translate",
-        "param": []
-      },
-      {
-        "title": "canvasContext.clip",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-clip",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setFontSize",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setFontSize",
-        "param": []
-      },
-      {
-        "title": "canvasContext.fillText",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-fillText",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setTextAlign",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setTextAlign",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setTextBaseline",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setTextBaseline",
-        "param": []
-      },
-      {
-        "title": "canvasContext.drawImage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-drawImage",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setGlobalAlph",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setGlobalAlpha",
-        "param": []
-      },
-      {
-        "title": "canvasContext.measureText",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-measureText",
-        "param": []
-      },
-      {
-        "title": "canvasContext.arcTo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-arcTo",
-        "param": []
-      },
-      {
-        "title": "canvasContext.strokeText",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-strokeText",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setLineDashOffset",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setLineDashOffset",
-        "param": []
-      },
-      {
-        "title": "canvasContext.createPattern",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-createPattern",
-        "param": []
-      },
-      {
-        "title": "canvasContext.bezierCurveTo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-bezierCurveTo",
-        "param": []
-      },
-      {
-        "title": "canvasContext.quadraticCurveTo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-quadraticCurveTo",
-        "param": []
-      },
-      {
-        "title": "canvasContext.save",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-save",
-        "param": []
-      },
-      {
-        "title": "canvasContext.restore",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-restore",
-        "param": []
-      },
-      {
-        "title": "canvasContext.draw",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-draw",
-        "param": []
-      },
-      {
-        "title": "canvasContext.font",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-font",
-        "param": []
-      },
-      {
-        "title": "canvasContext.setTransform",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_canvas/#canvasContext-setTransform",
-        "param": []
-      },
-      {
-        "title": "showToast",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_toast/#showToast",
-        "param": [
-          "title"
-        ]
-      },
-      {
-        "title": "showLoading",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_toast/#showLoading",
-        "param": [
-          "title"
-        ]
-      },
-      {
-        "title": "hideLoading",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_toast/#hideToast",
-        "param": []
-      },
-      {
-        "title": "showModal",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_toast/#showModal",
-        "param": [
-          "title",
-          "content"
-        ]
-      },
-      {
-        "title": "showActionSheet",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_toast/#showActionSheet",
-        "param": [
-          "itemList"
-        ]
-      },
-      {
-        "title": "setNavigationBarTitle",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_navigationbar/#setNavigationBarTitle",
-        "param": [
-          "title"
-        ]
-      },
-      {
-        "title": "showNavigationBarLoading",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_navigationbar/#showNavigationBarLoading",
-        "param": []
-      },
-      {
-        "title": "hideNavigationBarLoading",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_navigationbar/#hideNavigationBarLoading",
-        "param": []
-      },
-      {
-        "title": "setNavigationBarColor",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_navigationbar/#setNavigationBarColor",
-        "param": [
-          "frontColor",
-          "backgroundColor"
-        ]
-      },
-      {
-        "title": "setTabBarBadge",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tabBar/#setTabBarBadge",
-        "param": [
-          "index",
-          "text"
-        ]
-      },
-      {
-        "title": "removeTabBarBadge",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tabBar/#removeTabBarBadge",
-        "param": [
-          "index"
-        ]
-      },
-      {
-        "title": "showTabBarRedDot",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tabBar/#showTabBarRedDot",
-        "param": [
-          "index"
-        ]
-      },
-      {
-        "title": "hideTabBarRedDot",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tabBar/#hideTabBarRedDot",
-        "param": [
-          "index"
-        ]
-      },
-      {
-        "title": "setTabBarStyle",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tabBar/#setTabBarStyle",
-        "param": [
-          "color",
-          "selectedColor",
-          "backgroundColor",
-          "borderStyle"
-        ]
-      },
-      {
-        "title": "setTabBarItem",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tabBar/#setTabBarItem",
-        "param": [
-          "index",
-          "text",
-          "iconPath",
-          "selectedIconPath"
-        ]
-      },
-      {
-        "title": "showTabBar",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tabBar/#showTabBar",
-        "param": []
-      },
-      {
-        "title": "hideTabBar",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tabBar/#hideTabBar",
-        "param": []
-      },
-      {
-        "title": "navigateTo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tab/#navigateTo",
-        "param": [
-          "url"
-        ]
-      },
-      {
-        "title": "redirectTo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tab/#redirectTo",
-        "param": [
-          "url"
-        ]
-      },
-      {
-        "title": "switchTab",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tab/#switchTab",
-        "param": [
-          "url"
-        ]
-      },
-      {
-        "title": "navigateBack",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tab/#navigateBack",
-        "param": []
-      },
-      {
-        "title": "reLaunch",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_tab/#reLaunch",
-        "param": [
-          "url"
-        ]
-      },
-      {
-        "title": "createAnimation",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_createAnimation/#createAnimation",
-        "param": []
-      },
-      {
-        "title": "pageScrollTo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_pagescrollto/#pageScrollTo",
-        "param": [
-          "scrollTop"
-        ]
-      },
-      {
-        "title": "onPullDownRefresh",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_pull/#onPullDownRefresh",
-        "param": []
-      },
-      {
-        "title": "startPullDownRefresh",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_pull/#startPullDownRefresh",
-        "param": []
-      },
-      {
-        "title": "stopPullDownRefresh",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_pull/#stopPullDownRefresh",
-        "param": []
-      },
-      {
-        "title": "createSelectorQuery",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_query/#createSelectorQuery",
-        "param": []
-      },
-      {
-        "title": "selectorQuery.in(component)",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_query/#selectorQuery-in-component",
-        "param": []
-      },
-      {
-        "title": "selectorQuery.select(selector)",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_query/#selectorQuery-select-selector",
-        "param": []
-      },
-      {
-        "title": "selectorQuery.selectAll(selector)",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_query/#selectorQuery-selectAll-selector",
-        "param": []
-      },
-      {
-        "title": "selectorQuery.selectViewport()",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_query/#selectorQuery-selectViewport",
-        "param": []
-      },
-      {
-        "title": "nodesRef.boundingClientRect([callback])",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_query/#nodesRef-boundingClientRect-callback",
-        "param": []
-      },
-      {
-        "title": "nodesRef.scrollOffset([callback])",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_query/#nodesRef-scrollOffset-callback",
-        "param": []
-      },
-      {
-        "title": "nodesRef.fields(fields,[callback])",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_query/#nodesRef-fields-fields-callback",
-        "param": []
-      },
-      {
-        "title": "selectorQuery.exec([callback])",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/show_query/#selectorQuery-exec-callback",
+        "subCategory": "打开新的文件页面",
+        "apiName": "openDocument",
+        "apiUrl": "/docs/develop/api/file_open/#openDocument/",
+        "id": "openDocument",
         "param": []
       }
     ]
   },
   {
-    "title": "/docs/develop/api/device/",
+    "categoryName": "数据存储",
     "content": [
       {
-        "title": "getSystemInfo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_sys/#getSystemInfo",
-        "param": [
-          "success"
-        ]
-      },
-      {
-        "title": "getSystemInfoSync",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_sys/#getSystemInfoSync",
+        "subCategory": "存储数据",
+        "apiName": "setStorage",
+        "apiUrl": "/docs/develop/api/storage_save/#setStorage/",
+        "id": "setStorage",
         "param": []
       },
       {
-        "title": "canIUse",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_sys/#canIUse",
+        "subCategory": "存储数据",
+        "apiName": "setStorageSync",
+        "apiUrl": "/docs/develop/api/storage_save/#setStorageSync/",
+        "id": "setStorageSync",
         "param": []
       },
       {
-        "title": "onMemoryWarning",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_onmemory/#onMemoryWarning",
+        "subCategory": "存储数据",
+        "apiName": "getStorage",
+        "apiUrl": "/docs/develop/api/storage_save/#getStorage/",
+        "id": "getStorage",
         "param": []
       },
       {
-        "title": "getNetworkType",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_network/#getNetworkType",
-        "param": [
-          "success"
-        ]
-      },
-      {
-        "title": "onNetworkStatusChange",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_network/#onNetworkStatusChange",
+        "subCategory": "存储数据",
+        "apiName": "getStorageSync",
+        "apiUrl": "/docs/develop/api/storage_save/#getStorageSync/",
+        "id": "getStorageSync",
         "param": []
       },
       {
-        "title": "onAccelerometerChange",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_accelerometer/#onAccelerometerChange",
+        "subCategory": "存储数据",
+        "apiName": "getStorageInfo",
+        "apiUrl": "/docs/develop/api/storage_save/#getStorageInfo/",
+        "id": "getStorageInfo",
         "param": []
       },
       {
-        "title": "startAccelerometer",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_accelerometer/#startAccelerometer",
+        "subCategory": "存储数据",
+        "apiName": "getStorageInfoSync",
+        "apiUrl": "/docs/develop/api/storage_save/#getStorageInfoSync/",
+        "id": "getStorageInfoSync",
         "param": []
       },
       {
-        "title": "stopAccelerometer",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_accelerometer/#stopAccelerometer",
+        "subCategory": "存储清理",
+        "apiName": "removeStorage",
+        "apiUrl": "/docs/develop/api/storage_remove/#removeStorage/",
+        "id": "removeStorage",
         "param": []
       },
       {
-        "title": "onCompassChange",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_compass/#onCompassChange",
+        "subCategory": "存储清理",
+        "apiName": "removeStorageSync",
+        "apiUrl": "/docs/develop/api/storage_remove/#removeStorageSync/",
+        "id": "removeStorageSync",
         "param": []
       },
       {
-        "title": "startCompass",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_compass/#startCompass",
+        "subCategory": "存储清理",
+        "apiName": "clearStorage",
+        "apiUrl": "/docs/develop/api/storage_remove/#clearStorage/",
+        "id": "clearStorage",
         "param": []
       },
       {
-        "title": "stopCompass",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_compass/#stopCompass",
-        "param": []
-      },
-      {
-        "title": "scanCode",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_scan/#scanCode",
-        "param": []
-      },
-      {
-        "title": "setScreenBrightness",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_screen/#setScreenBrightness",
-        "param": [
-          "value"
-        ]
-      },
-      {
-        "title": "getScreenBrightness",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_screen/#getScreenBrightness",
-        "param": []
-      },
-      {
-        "title": "setKeepScreenOn",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_screen/#setKeepScreenOn",
-        "param": [
-          "keepScreenOn"
-        ]
-      },
-      {
-        "title": "onUserCaptureScreen",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_capture/#onUserCaptureScreen",
-        "param": []
-      },
-      {
-        "title": "vibrateLong",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_vibrate/#vibrateLong",
-        "param": []
-      },
-      {
-        "title": "vibrateShort",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_vibrate/#vibrateShort",
-        "param": []
-      },
-      {
-        "title": "addPhoneContact",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_call/#addPhoneContact",
-        "param": []
-      },
-      {
-        "title": "makePhoneCall",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_call/#makePhoneCall",
-        "param": [
-          "phoneNumber"
-        ]
-      },
-      {
-        "title": "setClipboardData",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_clipboard/#setClipboardData",
-        "param": [
-          "data"
-        ]
-      },
-      {
-        "title": "getClipboardData",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/device_clipboard/#getClipboardData",
+        "subCategory": "存储清理",
+        "apiName": "clearStorageSync",
+        "apiUrl": "/docs/develop/api/storage_remove/#clearStorageSync/",
+        "id": "clearStorageSync",
         "param": []
       }
     ]
   },
   {
-    "title": "/docs/develop/api/ext/",
+    "categoryName": "位置",
     "content": [
       {
-        "title": "getExtConfig",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/getextconfig/#getExtConfig",
+        "subCategory": "获取位置",
+        "apiName": "getLocation",
+        "apiUrl": "/docs/develop/api/location_get/#getLocation/",
+        "id": "getLocation",
         "param": []
       },
       {
-        "title": "getExtConfigSync",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/getextconfig/#getExtConfigSync",
+        "subCategory": "获取位置",
+        "apiName": "chooseLocation",
+        "apiUrl": "/docs/develop/api/location_get/#chooseLocation/",
+        "id": "chooseLocation",
+        "param": []
+      },
+      {
+        "subCategory": "查看位置",
+        "apiName": "openLocation",
+        "apiUrl": "/docs/develop/api/location_open/#openLocation/",
+        "id": "openLocation",
+        "param": []
+      },
+      {
+        "subCategory": "地图组件控制",
+        "apiName": "createMapContext",
+        "apiUrl": "/docs/develop/api/location_map/#createMapContext/",
+        "id": "createMapContext",
         "param": []
       }
     ]
   },
   {
-    "title": "/docs/develop/api/open/",
+    "categoryName": "界面",
     "content": [
       {
-        "title": "login",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_login/#login",
+        "subCategory": "绘图",
+        "apiName": "createCanvasContext",
+        "apiUrl": "/docs/develop/api/show_canvas/#createCanvasContext/",
+        "id": "createCanvasContext",
         "param": []
       },
       {
-        "title": "checkSession",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_login/#checkSession",
+        "subCategory": "绘图",
+        "apiName": "canvasGetImageData",
+        "apiUrl": "/docs/develop/api/show_canvas/#canvasGetImageData/",
+        "id": "canvasGetImageData",
         "param": []
       },
       {
-        "title": "authorize",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_authorize/#authorize",
-        "param": [
-          "scope"
-        ]
-      },
-      {
-        "title": "getSwanId",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_userinfo/#getSwanId",
+        "subCategory": "绘图",
+        "apiName": "canvasPutImageData",
+        "apiUrl": "/docs/develop/api/show_canvas/#canvasPutImageData/",
+        "id": "canvasPutImageData",
         "param": []
       },
       {
-        "title": "getUserInfo",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_userinfo/#getUserInfo",
+        "subCategory": "绘图",
+        "apiName": "canvasToTempFilePath",
+        "apiUrl": "/docs/develop/api/show_canvas/#canvasToTempFilePath-OBJECT-this/",
+        "id": "canvasToTempFilePath-OBJECT-this",
         "param": []
       },
       {
-        "title": "openSetting",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_setting/#openSetting",
+        "subCategory": "交互反馈",
+        "apiName": "showToast",
+        "apiUrl": "/docs/develop/api/show_toast/#showToast/",
+        "id": "showToast",
         "param": []
       },
       {
-        "title": "getSetting",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_setting/#getSetting",
+        "subCategory": "交互反馈",
+        "apiName": "showLoading",
+        "apiUrl": "/docs/develop/api/show_toast/#showLoading/",
+        "id": "showLoading",
         "param": []
       },
       {
-        "title": "onShareAppMessage",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_share/#onShareAppMessage",
+        "subCategory": "交互反馈",
+        "apiName": "hideToast",
+        "apiUrl": "/docs/develop/api/show_toast/#hideToast/",
+        "id": "hideToast",
         "param": []
       },
       {
-        "title": "chooseAddress",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_chooseaddress/#chooseAddress",
+        "subCategory": "交互反馈",
+        "apiName": "hideLoading",
+        "apiUrl": "/docs/develop/api/show_toast/#hideLoading/",
+        "id": "hideLoading",
         "param": []
       },
       {
-        "title": "requestPolymerPayment",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_payment/#requestPolymerPayment",
-        "param": [
-          "orderInfo"
-        ]
-      },
-      {
-        "title": "chooseInvoiceTitle",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_chooseinvoicetitle/#chooseInvoiceTitle",
+        "subCategory": "交互反馈",
+        "apiName": "showModal",
+        "apiUrl": "/docs/develop/api/show_toast/#showModal/",
+        "id": "showModal",
         "param": []
       },
       {
-        "title": "navigateToSmartProgram",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_smartprogram/#navigateToSmartProgram",
-        "param": [
-          "appKey"
-        ]
+        "subCategory": "交互反馈",
+        "apiName": "showActionSheet",
+        "apiUrl": "/docs/develop/api/show_toast/#showActionSheet/",
+        "id": "showActionSheet",
+        "param": []
       },
       {
-        "title": "navigateBackSmartProgram",
-        "href": "https://smartprogram.baidu.com/docs/develop/api/open_smartprogram/#navigateBackSmartProgram",
+        "subCategory": "导航栏",
+        "apiName": "setNavigationBarTitle",
+        "apiUrl": "/docs/develop/api/show_navigationbar/#setNavigationBarTitle/",
+        "id": "setNavigationBarTitle",
+        "param": []
+      },
+      {
+        "subCategory": "导航栏",
+        "apiName": "showNavigationBarLoading",
+        "apiUrl": "/docs/develop/api/show_navigationbar/#showNavigationBarLoading/",
+        "id": "showNavigationBarLoading",
+        "param": []
+      },
+      {
+        "subCategory": "导航栏",
+        "apiName": "hideNavigationBarLoading",
+        "apiUrl": "/docs/develop/api/show_navigationbar/#hideNavigationBarLoading/",
+        "id": "hideNavigationBarLoading",
+        "param": []
+      },
+      {
+        "subCategory": "导航栏",
+        "apiName": "setNavigationBarColor",
+        "apiUrl": "/docs/develop/api/show_navigationbar/#setNavigationBarColor/",
+        "id": "setNavigationBarColor",
+        "param": []
+      },
+      {
+        "subCategory": "设置tabBar",
+        "apiName": "setTabBarBadge",
+        "apiUrl": "/docs/develop/api/show_tabbar/#setTabBarBadge/",
+        "id": "setTabBarBadge",
+        "param": []
+      },
+      {
+        "subCategory": "设置tabBar",
+        "apiName": "removeTabBarBadge",
+        "apiUrl": "/docs/develop/api/show_tabbar/#removeTabBarBadge/",
+        "id": "removeTabBarBadge",
+        "param": []
+      },
+      {
+        "subCategory": "设置tabBar",
+        "apiName": "showTabBarRedDot",
+        "apiUrl": "/docs/develop/api/show_tabbar/#showTabBarRedDot/",
+        "id": "showTabBarRedDot",
+        "param": []
+      },
+      {
+        "subCategory": "设置tabBar",
+        "apiName": "hideTabBarRedDot",
+        "apiUrl": "/docs/develop/api/show_tabbar/#hideTabBarRedDot/",
+        "id": "hideTabBarRedDot",
+        "param": []
+      },
+      {
+        "subCategory": "设置tabBar",
+        "apiName": "setTabBarStyle",
+        "apiUrl": "/docs/develop/api/show_tabbar/#setTabBarStyle/",
+        "id": "setTabBarStyle",
+        "param": []
+      },
+      {
+        "subCategory": "设置tabBar",
+        "apiName": "setTabBarItem",
+        "apiUrl": "/docs/develop/api/show_tabbar/#setTabBarItem/",
+        "id": "setTabBarItem",
+        "param": []
+      },
+      {
+        "subCategory": "设置tabBar",
+        "apiName": "showTabBar",
+        "apiUrl": "/docs/develop/api/show_tabbar/#showTabBar/",
+        "id": "showTabBar",
+        "param": []
+      },
+      {
+        "subCategory": "设置tabBar",
+        "apiName": "hideTabBar",
+        "apiUrl": "/docs/develop/api/show_tabbar/#hideTabBar/",
+        "id": "hideTabBar",
+        "param": []
+      },
+      {
+        "subCategory": "导航",
+        "apiName": "navigateTo",
+        "apiUrl": "/docs/develop/api/show_tab/#navigateTo/",
+        "id": "navigateTo",
+        "param": []
+      },
+      {
+        "subCategory": "导航",
+        "apiName": "redirectTo",
+        "apiUrl": "/docs/develop/api/show_tab/#redirectTo/",
+        "id": "redirectTo",
+        "param": []
+      },
+      {
+        "subCategory": "导航",
+        "apiName": "switchTab",
+        "apiUrl": "/docs/develop/api/show_tab/#switchTab/",
+        "id": "switchTab",
+        "param": []
+      },
+      {
+        "subCategory": "导航",
+        "apiName": "navigateBack",
+        "apiUrl": "/docs/develop/api/show_tab/#navigateBack/",
+        "id": "navigateBack",
+        "param": []
+      },
+      {
+        "subCategory": "导航",
+        "apiName": "reLaunch",
+        "apiUrl": "/docs/develop/api/show_tab/#reLaunch/",
+        "id": "reLaunch",
+        "param": []
+      },
+      {
+        "subCategory": "动画",
+        "apiName": "createAnimation",
+        "apiUrl": "/docs/develop/api/show_createanimation/#createAnimation/",
+        "id": "createAnimation",
+        "param": []
+      },
+      {
+        "subCategory": "位置",
+        "apiName": "pageScrollTo",
+        "apiUrl": "/docs/develop/api/show_pagescrollto/#pageScrollTo/",
+        "id": "pageScrollTo",
+        "param": []
+      },
+      {
+        "subCategory": "背景",
+        "apiName": "setBackgroundColor",
+        "apiUrl": "/docs/develop/api/show_background/#setBackgroundColor/",
+        "id": "setBackgroundColor",
+        "param": []
+      },
+      {
+        "subCategory": "背景",
+        "apiName": "setBackgroundTextStyle",
+        "apiUrl": "/docs/develop/api/show_background/#setBackgroundTextStyle/",
+        "id": "setBackgroundTextStyle",
+        "param": []
+      },
+      {
+        "subCategory": "下拉刷新",
+        "apiName": "startPullDownRefresh",
+        "apiUrl": "/docs/develop/api/show_pull/#startPullDownRefresh/",
+        "id": "startPullDownRefresh",
+        "param": []
+      },
+      {
+        "subCategory": "下拉刷新",
+        "apiName": "stopPullDownRefresh",
+        "apiUrl": "/docs/develop/api/show_pull/#stopPullDownRefresh/",
+        "id": "stopPullDownRefresh",
+        "param": []
+      },
+      {
+        "subCategory": "节点信息",
+        "apiName": "createIntersectionObserver",
+        "apiUrl": "/docs/develop/api/show_query/#createIntersectionObserver-this-options/",
+        "id": "createIntersectionObserver-this-options",
+        "param": []
+      },
+      {
+        "subCategory": "节点信息",
+        "apiName": "createSelectorQuery",
+        "apiUrl": "/docs/develop/api/show_query/#createSelectorQuery/",
+        "id": "createSelectorQuery",
+        "param": []
+      }
+    ]
+  },
+  {
+    "categoryName": "设备",
+    "content": [
+      {
+        "subCategory": "系统信息",
+        "apiName": "getSystemInfo",
+        "apiUrl": "/docs/develop/api/device_sys/#getSystemInfo/",
+        "id": "getSystemInfo",
+        "param": []
+      },
+      {
+        "subCategory": "系统信息",
+        "apiName": "getSystemInfoSync",
+        "apiUrl": "/docs/develop/api/device_sys/#getSystemInfoSync/",
+        "id": "getSystemInfoSync",
+        "param": []
+      },
+      {
+        "subCategory": "系统信息",
+        "apiName": "getEnvInfoSync",
+        "apiUrl": "/docs/develop/api/device_sys/#getEnvInfoSync/",
+        "id": "getEnvInfoSync",
+        "param": []
+      },
+      {
+        "subCategory": "系统信息",
+        "apiName": "canIUse",
+        "apiUrl": "/docs/develop/api/device_sys/#canIUse/",
+        "id": "canIUse",
+        "param": []
+      },
+      {
+        "subCategory": "内存",
+        "apiName": "onMemoryWarning",
+        "apiUrl": "/docs/develop/api/device_onmemory/#onMemoryWarning/",
+        "id": "onMemoryWarning",
+        "param": []
+      },
+      {
+        "subCategory": "网络状态",
+        "apiName": "getNetworkType",
+        "apiUrl": "/docs/develop/api/device_network/#getNetworkType/",
+        "id": "getNetworkType",
+        "param": []
+      },
+      {
+        "subCategory": "网络状态",
+        "apiName": "onNetworkStatusChange",
+        "apiUrl": "/docs/develop/api/device_network/#onNetworkStatusChange/",
+        "id": "onNetworkStatusChange",
+        "param": []
+      },
+      {
+        "subCategory": "加速度计",
+        "apiName": "onAccelerometerChange",
+        "apiUrl": "/docs/develop/api/device_accelerometer/#onAccelerometerChange/",
+        "id": "onAccelerometerChange",
+        "param": []
+      },
+      {
+        "subCategory": "加速度计",
+        "apiName": "startAccelerometer",
+        "apiUrl": "/docs/develop/api/device_accelerometer/#startAccelerometer/",
+        "id": "startAccelerometer",
+        "param": []
+      },
+      {
+        "subCategory": "加速度计",
+        "apiName": "stopAccelerometer",
+        "apiUrl": "/docs/develop/api/device_accelerometer/#stopAccelerometer/",
+        "id": "stopAccelerometer",
+        "param": []
+      },
+      {
+        "subCategory": "罗盘",
+        "apiName": "onCompassChange",
+        "apiUrl": "/docs/develop/api/device_compass/#onCompassChange/",
+        "id": "onCompassChange",
+        "param": []
+      },
+      {
+        "subCategory": "罗盘",
+        "apiName": "startCompass",
+        "apiUrl": "/docs/develop/api/device_compass/#startCompass/",
+        "id": "startCompass",
+        "param": []
+      },
+      {
+        "subCategory": "罗盘",
+        "apiName": "stopCompass",
+        "apiUrl": "/docs/develop/api/device_compass/#stopCompass/",
+        "id": "stopCompass",
+        "param": []
+      },
+      {
+        "subCategory": "扫码",
+        "apiName": "scanCode",
+        "apiUrl": "/docs/develop/api/device_scan/#scanCode/",
+        "id": "scanCode",
+        "param": []
+      },
+      {
+        "subCategory": "屏幕亮度",
+        "apiName": "setScreenBrightness",
+        "apiUrl": "/docs/develop/api/device_screen/#setScreenBrightness/",
+        "id": "setScreenBrightness",
+        "param": []
+      },
+      {
+        "subCategory": "屏幕亮度",
+        "apiName": "getScreenBrightness",
+        "apiUrl": "/docs/develop/api/device_screen/#getScreenBrightness/",
+        "id": "getScreenBrightness",
+        "param": []
+      },
+      {
+        "subCategory": "屏幕亮度",
+        "apiName": "setKeepScreenOn",
+        "apiUrl": "/docs/develop/api/device_screen/#setKeepScreenOn/",
+        "id": "setKeepScreenOn",
+        "param": []
+      },
+      {
+        "subCategory": "用户截屏事件",
+        "apiName": "onUserCaptureScreen",
+        "apiUrl": "/docs/develop/api/device_capture/#onUserCaptureScreen/",
+        "id": "onUserCaptureScreen",
+        "param": []
+      },
+      {
+        "subCategory": "振动",
+        "apiName": "vibrateLong",
+        "apiUrl": "/docs/develop/api/device_vibrate/#vibrateLong/",
+        "id": "vibrateLong",
+        "param": []
+      },
+      {
+        "subCategory": "振动",
+        "apiName": "vibrateShort",
+        "apiUrl": "/docs/develop/api/device_vibrate/#vibrateShort/",
+        "id": "vibrateShort",
+        "param": []
+      },
+      {
+        "subCategory": "手机联系人",
+        "apiName": "addPhoneContact",
+        "apiUrl": "/docs/develop/api/device_phonecontact/#addPhoneContact/",
+        "id": "addPhoneContact",
+        "param": []
+      },
+      {
+        "subCategory": "拨打电话",
+        "apiName": "makePhoneCall",
+        "apiUrl": "/docs/develop/api/device_call/#makePhoneCall/",
+        "id": "makePhoneCall",
+        "param": []
+      },
+      {
+        "subCategory": "剪贴板",
+        "apiName": "setClipboardData",
+        "apiUrl": "/docs/develop/api/device_clipboard/#setClipboardData/",
+        "id": "setClipboardData",
+        "param": []
+      },
+      {
+        "subCategory": "剪贴板",
+        "apiName": "getClipboardData",
+        "apiUrl": "/docs/develop/api/device_clipboard/#getClipboardData/",
+        "id": "getClipboardData",
+        "param": []
+      }
+    ]
+  },
+  {
+    "categoryName": "第三方平台",
+    "content": [
+      {
+        "subCategory": "获取第三方平台数据",
+        "apiName": "getExtConfig",
+        "apiUrl": "/docs/develop/api/getextconfig/#getExtConfig/",
+        "id": "getExtConfig",
+        "param": []
+      },
+      {
+        "subCategory": "获取第三方平台数据",
+        "apiName": "getExtConfigSync",
+        "apiUrl": "/docs/develop/api/getextconfig/#getExtConfigSync/",
+        "id": "getExtConfigSync",
+        "param": []
+      }
+    ]
+  },
+  {
+    "categoryName": "开放接口",
+    "content": [
+      {
+        "subCategory": "登录",
+        "apiName": "login",
+        "apiUrl": "/docs/develop/api/open_log/#login/",
+        "id": "login",
+        "param": []
+      },
+      {
+        "subCategory": "登录",
+        "apiName": "checkSession",
+        "apiUrl": "/docs/develop/api/open_log/#checkSession/",
+        "id": "checkSession",
+        "param": []
+      },
+      {
+        "subCategory": "登录",
+        "apiName": "isLoginSync",
+        "apiUrl": "/docs/develop/api/open_log/#isLoginSync/",
+        "id": "isLoginSync",
+        "param": []
+      },
+      {
+        "subCategory": "授权",
+        "apiName": "authorize",
+        "apiUrl": "/docs/develop/api/open_authorize/#authorize/",
+        "id": "authorize",
+        "param": []
+      },
+      {
+        "subCategory": "用户信息",
+        "apiName": "getSwanId",
+        "apiUrl": "/docs/develop/api/open_userinfo/#getSwanId/",
+        "id": "getSwanId",
+        "param": []
+      },
+      {
+        "subCategory": "用户信息",
+        "apiName": "getUserInfo",
+        "apiUrl": "/docs/develop/api/open_userinfo/#getUserInfo/",
+        "id": "getUserInfo",
+        "param": []
+      },
+      {
+        "subCategory": "设置",
+        "apiName": "openSetting",
+        "apiUrl": "/docs/develop/api/open_setting/#openSetting/",
+        "id": "openSetting",
+        "param": []
+      },
+      {
+        "subCategory": "设置",
+        "apiName": "getSetting",
+        "apiUrl": "/docs/develop/api/open_setting/#getSetting/",
+        "id": "getSetting",
+        "param": []
+      },
+      {
+        "subCategory": "分享",
+        "apiName": "openShare",
+        "apiUrl": "/docs/develop/api/open_share/#openShare/",
+        "id": "openShare",
+        "param": []
+      },
+      {
+        "subCategory": "选择收货地址",
+        "apiName": "chooseAddress",
+        "apiUrl": "/docs/develop/api/open_chooseaddress/#chooseAddress/",
+        "id": "chooseAddress",
+        "param": []
+      },
+      {
+        "subCategory": "百度收银台支付",
+        "apiName": "requestPolymerPayment",
+        "apiUrl": "/docs/develop/api/open_payment/#requestPolymerPayment/",
+        "id": "requestPolymerPayment",
+        "param": []
+      },
+      {
+        "subCategory": "获取发票抬头",
+        "apiName": "chooseInvoiceTitle",
+        "apiUrl": "/docs/develop/api/open_chooseinvoicetitle/#chooseInvoiceTitle/",
+        "id": "chooseInvoiceTitle",
+        "param": []
+      },
+      {
+        "subCategory": "打开小程序",
+        "apiName": "navigateToSmartProgram",
+        "apiUrl": "/docs/develop/api/open_smartprogram/#navigateToSmartProgram/",
+        "id": "navigateToSmartProgram",
+        "param": []
+      },
+      {
+        "subCategory": "打开小程序",
+        "apiName": "navigateBackSmartProgram",
+        "apiUrl": "/docs/develop/api/open_smartprogram/#navigateBackSmartProgram/",
+        "id": "navigateBackSmartProgram",
         "param": []
       }
     ]

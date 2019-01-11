@@ -1,186 +1,212 @@
 /**
  * @file app.js
- * @author caixiaowen
+ * @author caixiaowen  zhuyeqing
  */
 
 import express from 'express';
 import cheerio from 'cheerio';
 import superagent from 'superagent';
-import mapLimit from 'async/mapLimit';
 import fs from 'fs';
 import path from 'path';
 import {DICT} from './config.js';
+import {blacklist} from './blacklist.js';
+
 const {
     host,
     mainPage,
-    categoryClass,
-    apiTable,
-    paramTable,
+    categoryList,
+    categoryName,
+    apiList,
     apiHtml,
+    urlProp,
+    paramTable,
     apiTitle,
     apiParamTable,
     paramColumn,
+    typeColumn,
     neccessColumn,
-    urlProp,
     fileName
 } = DICT;
+
 const app = express();
 
 let apiData = [];
+let html;
 
-// 第一步：从页面的chapter栏抓取API下各个分类
-function findApiCaterioges() {
-    return new Promise(resolve => {
-        superagent.get(host + mainPage) // 请求页面地址
-        .end((err, sres) => { // 页面获取到的数据
+function requestContent() {
+    return new Promise((resolve, reject) => {
+        // 请求主页面
+        superagent.get(host + mainPage)
+
+        // 获取到页面数据
+        .end((err, sres) => {
             if (err) {
-                throw err;
+                reject();
             }
-
-            let $ = cheerio.load(sres.text); // 用cheerio解析页面数据
-            let $api = $(categoryClass);
-
-            $api.each((index, element) => {
-                let $eleItem = $(element).find(apiHtml);
-                apiData.push({
-                    title: $eleItem.attr(urlProp),
-                    content: []
-                });
-            });
+            // cheerio解析页面数据
+            let $ = cheerio.load(sres.text);
+            html = $.html();
             resolve();
         });
     });
 }
 
-// 第二步：依次抓取每个分类下的所有API
+// 第一步：从sidebar的nav栏抓取API分类 && API名称 && API URL
 function findApi() {
-    return new Promise(resolve => {
-        // 并发处理多个请求
-        mapLimit(apiData, 100, (category, callback) => {
-            superagent.get(host + category.title)
-            .end((err, sres) => {
-                let item = [];
-                if (err) {
-                    throw err;
+    return new Promise((resolve, reject) => {
+        let $ = cheerio.load(html);
+
+        // API主列表，内含分类名以及所有API
+        let categories = $(categoryList);
+
+        // 获取API分类名称 && API名称 && API URL
+        categories.each((i, ele) => {
+            // 分类名称
+            let eleItem = $(ele).find(categoryName);
+
+            // 存放多个API的信息
+            let item = [];
+            // 每个分类下的子分类列表
+            let apis = $(ele).find(apiList);
+
+            $(apis).each((i, ele) => {
+
+                // 子分类
+                let subCategory = $(ele).children().first().text();
+
+                // 判断子分类是否需要被过滤
+                if (filterSubcategoryFlag(subCategory)) {
+                    return false;
                 }
 
-                let $ = cheerio.load(sres.text);
-                $(apiTable).each((index, element) => {
-                    let $el = $(element).find(apiHtml);
-                    let it = {
-                        title: $el.text(),
-                        href: $el.attr(urlProp),
+                // 每个子分类下API的a标签列表
+                let api = $(ele).find(apiHtml);
+
+                $(api).each((i, ele) => {
+                    let apiName = $(ele).text();
+                    let apiUrl = $(ele).attr(urlProp);
+                    // 获取API参数使用的id
+                    let id = apiUrl.match(/\#(\S+)\//)[1];
+
+                    // 判断API名字是否需要被过滤
+                    if (filterApiFlag(apiName)) {
+                        return;
+                    }
+
+                    item.push({
+
+                        // 子分类名称
+                        subCategory,
+
+                        // API名称
+                        apiName: modifyApiName(apiName),
+
+                        // API URL
+                        apiUrl,
+
+                        id,
+
+                        // 下一步中存放参数相关信息
                         param: []
-                    };
-                    item.push(it);
+                    });
+
                 });
-                category.content = item;
-                callback();
             });
-        }, err => {
-            if (err) {
-                throw err;
-            }
-            resolve();
+
+            // 存入apiData中
+            apiData.push({
+                categoryName: eleItem.text(),
+                content: item
+            });
         });
+        resolve();
     });
 }
 
-// 判断是否必需参数
-function isNeccessParam($, obj) {
-    // 文档中唯一一条例外数据
-    if (obj.title === 'requestPolymerPayment 百度电商开放平台：产品介绍') {
-        obj.title = 'requestPolymerPayment';
-    }
-    let title = obj.title;
-    // 特殊符号需转成'-'，首尾不要有特殊符号
-    let p = /[\.\,\(\)]/g;
-    if (p.test(title)) {
-        title = title.replace(p, '-');
-        let p3 = /[\-*]$/g;
-        while (p3.test(title)) {
-            title = title.replace(p3, '');
-        }
-        let p2 = /[\[\]\ ]/g;
-        if (p2.test(title)) {
-            title = title.replace(p2, '');
-        }
-    }
-    let $el = $('#' + title);
-    // API为h2标题
-    let hasH2 = $el.nextAll().filter(apiTitle);
-    let $hasTable;
-    if (hasH2) {
-        // API为h2标题时，需保证不受下面其他API的影响
-        $hasTable = $el.nextUntil(apiTitle).filter(apiParamTable);
-    }
-    else {
-        $hasTable = $el.nextAll().filter(apiParamTable);
-    }
-    // 参数描述写在表格中，所以从表格读取
-    if ($hasTable) {
-        let par = [];
-        $hasTable.first().find(paramTable).each((index, element) => {
-            let $param = $(element).find(paramColumn);
-            let $neccess = $(element).find(neccessColumn);
-            if ($neccess.text() === '是') {
-                par.push($param.text());
-            }
-        });
-        obj.param = par;
-    }
-    return obj;
+// 过滤子目录
+function filterSubcategoryFlag(name) {
+    return blacklist.subCategory.includes(name);
 }
 
-// 读取单个API的必需参数
-function findParamOfApi(content) {
-    return new Promise(resolve => {
-        mapLimit(content, 100, (api, callback) => {
-            superagent.get(api.href)
-            .end((err, sres) => {
-                if (err) {
-                    throw err;
-                }
+// 过滤API的名字
+function filterApiFlag(name) {
 
-                let $ = cheerio.load(sres.text);
-                // 判断是否必需参数
-                api = isNeccessParam($, api);
-                callback();
+    // 分别过滤的是黑名单的API 含有点的API
+    return blacklist.apiName.includes(name) || /\./g.test(name);
+}
+
+// 修改API的名字
+function modifyApiName(name) {
+    name = /\(.*\)/g.test(name) ? name.replace(/\(.*\)/g, '') : name;
+    return name;
+}
+
+// 第二步：抓取参数 && 类型 && 是否必需
+function getParams() {
+    return new Promise((resolve, reject) => {
+        // TODO 需要并行请求，否则没有内容
+        apiData.forEach(eachCategory => {
+            let apis = eachCategory.content;
+            apis.forEach(eachApi => {
+                let id = eachApi.id;
+
+                let $ = cheerio.load(html);
+                let $el = $('#' + id);
+
+
+
+                // API参数的标题名称
+                let paramObjTit = ['Object参数说明', 'OBJECT参数说明', 'Object参数', 'options参数说明', '参数说明'];
+
+                let hasTable = $el.html();
+
+                // let title = hasTable.first().prev().find('strong').text();
+
+                // 删掉冒号和空格
+                // title = title.replace(/\：|\:|\s/g, '');
+
+                // 从表格读取参数
+                // 判断是否有表格 且 第一个表格前一个相邻元素的标题是否是paramObjName中的一个
+                // if (hasTable && paramObjTit.includes(title)) {
+                //     let par = {};
+                //     hasTable.first().find(paramTable).each((index, element) => {
+                //         let $param = $(element).find(paramColumn);
+                //         let $type = $(element).find(typeColumn);
+                //         let $neccess = $(element).find(neccessColumn);
+                //         par = {
+                //             name: $param.text(),
+                //             type: $type.text(),
+                //             required: $neccess.text()
+                //         };
+                //         element.param.push(par);
+                //     });
+                // }
             });
-        }, err => {
-            if (err) {
-                throw err;
-            }
-            resolve();
         });
+        resolve();
     });
 }
 
-// 第三步：遍历所有API各自的必需参数
-function mapApiForParam() {
-    let allApi = [];
-    let len = apiData.length;
-    for (let i = 0; i < len; i++) {
-        // 挨个读取API的必需参数
-        allApi.push(findParamOfApi(apiData[i].content));
-    }
-    // 必须等到数据全部抓完才返回结果
-    return Promise.all(allApi);
-}
+
 
 app.get('/', (req, res) => {
     res.send('开始读取数据');
-    // 第一步：从页面的chapter栏抓取API下各个分类
-    findApiCaterioges()
-    // 第二步：抓取每个分类下的所有API
+
+    requestContent()
+
+    // 第一步：从页面nav栏中抓取API分类 && API名称 && API URL
     .then(() => findApi())
-     // 第三步：抓取所有API各自的必需参数
-    .then(() => mapApiForParam())
+
+
+    // 第二步：抓取所有API各自的参数及详情
+    .then(() => getParams())
+
+    // 第四步：将数据写入文件
     .then(() => {
-        // 第四步：将数据写入文件
         fs.writeFileSync(path.join(__dirname, fileName), JSON.stringify(apiData, null, 2));
         console.log(105, '写入文件成功');
     }).catch(err => {
         throw err;
     });
 }).listen(8811);
+
