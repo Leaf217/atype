@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "data": "node ./lib/index.js"
+    "start": "node ./lib/index.js"
   },
   "repository": {
     "type": "git",
