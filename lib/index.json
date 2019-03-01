@@ -1,0 +1,1815 @@
+[
+  {
+    "categoryName": "网络",
+    "content": [
+      {
+        "subCategoryName": "请求",
+        "subCategoryUrl": "/docs/develop/api/net_request/#request/",
+        "subContent": [
+          {
+            "apiName": "request",
+            "apiUrl": "/docs/develop/api/net_request/#request/",
+            "id": "request",
+            "params": [
+              {
+                "name": "url",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "data",
+                "type": "Object/String",
+                "required": "否"
+              },
+              {
+                "name": "header",
+                "type": "Object",
+                "required": "否"
+              },
+              {
+                "name": "method",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "dataType",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "responseType",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subCategoryName": "上传、下载",
+        "subCategoryUrl": "/docs/develop/api/net_uploadfile/#uploadFile/",
+        "subContent": [
+          {
+            "apiName": "uploadFile",
+            "apiUrl": "/docs/develop/api/net_uploadfile/#uploadFile/",
+            "id": "uploadFile",
+            "params": [
+              {
+                "name": "url",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "filePath",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "name",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "header",
+                "type": "Object",
+                "required": "否"
+              },
+              {
+                "name": "formData",
+                "type": "Object",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          },
+          {
+            "apiName": "downloadFile",
+            "apiUrl": "/docs/develop/api/net_uploadfile/#downloadFile/",
+            "id": "downloadFile",
+            "params": [
+              {
+                "name": "url",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "header",
+                "type": "Object",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subCategoryName": "WebSocket",
+        "subCategoryUrl": "/docs/develop/api/net_websocket/#connectSocket/",
+        "subContent": [
+          {
+            "apiName": "connectSocket",
+            "apiUrl": "/docs/develop/api/net_websocket/#connectSocket/",
+            "id": "connectSocket",
+            "params": [
+              {
+                "name": "url",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "header",
+                "type": "Object",
+                "required": "否"
+              },
+              {
+                "name": "protocols",
+                "type": "StringArray",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          },
+          {
+            "apiName": "onSocketOpen",
+            "apiUrl": "/docs/develop/api/net_websocket/#onSocketOpen/",
+            "id": "onSocketOpen",
+            "params": [
+              {
+                "name": "header",
+                "type": "object",
+                "required": "连接成功的 HTTP 响应 Header。"
+              }
+            ]
+          },
+          {
+            "apiName": "onSocketError",
+            "apiUrl": "/docs/develop/api/net_websocket/#onSocketError/",
+            "id": "onSocketError",
+            "params": []
+          },
+          {
+            "apiName": "sendSocketMessage",
+            "apiUrl": "/docs/develop/api/net_websocket/#sendSocketMessage/",
+            "id": "sendSocketMessage",
+            "params": [
+              {
+                "name": "data",
+                "type": "String/ArrayBuffer",
+                "required": "是"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          },
+          {
+            "apiName": "onSocketMessage",
+            "apiUrl": "/docs/develop/api/net_websocket/#onSocketMessage/",
+            "id": "onSocketMessage",
+            "params": [
+              {
+                "name": "data",
+                "type": "String/ArrayBuffer",
+                "required": "服务器返回的消息"
+              }
+            ]
+          },
+          {
+            "apiName": "closeSocket",
+            "apiUrl": "/docs/develop/api/net_websocket/#closeSocket/",
+            "id": "closeSocket",
+            "params": [
+              {
+                "name": "code",
+                "type": "Number",
+                "required": "否"
+              },
+              {
+                "name": "reason",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          },
+          {
+            "apiName": "onSocketClose",
+            "apiUrl": "/docs/develop/api/net_websocket/#onSocketClose/",
+            "id": "onSocketClose",
+            "params": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "AI",
+    "content": [
+      {
+        "subCategoryName": "接入说明",
+        "subContent": []
+      },
+      {
+        "subCategoryName": "文字识别",
+        "subCategoryUrl": "/docs/develop/api/ai_ocr/#ocrIdCard/",
+        "subContent": [
+          {
+            "apiName": "ocrIdCard",
+            "apiUrl": "/docs/develop/api/ai_ocr/#ocrIdCard/",
+            "id": "ocrIdCard",
+            "params": [
+              {
+                "name": "detect_direction",
+                "type": "Boolean",
+                "required": "否"
+              },
+              {
+                "name": "id_card_side",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "image",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "detect_risk",
+                "type": "Boolean",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          },
+          {
+            "apiName": "ocrBankCard",
+            "apiUrl": "/docs/develop/api/ai_ocr/#ocrBankCard/",
+            "id": "ocrBankCard",
+            "params": [
+              {
+                "name": "image",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          },
+          {
+            "apiName": "ocrDrivingLicense",
+            "apiUrl": "/docs/develop/api/ai_ocr/#ocrDrivingLicense/",
+            "id": "ocrDrivingLicense",
+            "params": [
+              {
+                "name": "image",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "detect_direction",
+                "type": "Boolean",
+                "required": "否"
+              },
+              {
+                "name": "unified_valid_period",
+                "type": "Boolean",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          },
+          {
+            "apiName": "ocrVehicleLicense",
+            "apiUrl": "/docs/develop/api/ai_ocr/#ocrVehicleLicense/",
+            "id": "ocrVehicleLicense",
+            "params": [
+              {
+                "name": "image",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "detect_direction",
+                "type": "Boolean",
+                "required": "否"
+              },
+              {
+                "name": "accuracy",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subCategoryName": "文本审核",
+        "subCategoryUrl": "/docs/develop/api/ai_text/#textReview/",
+        "subContent": [
+          {
+            "apiName": "textReview",
+            "apiUrl": "/docs/develop/api/ai_text/#textReview/",
+            "id": "textReview",
+            "params": [
+              {
+                "name": "content",
+                "type": "String",
+                "required": "是"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subCategoryName": "语音合成",
+        "subCategoryUrl": "/docs/develop/api/ai_audio/#textToAudio/",
+        "subContent": [
+          {
+            "apiName": "textToAudio",
+            "apiUrl": "/docs/develop/api/ai_audio/#textToAudio/",
+            "id": "textToAudio",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "图像审核",
+        "subCategoryUrl": "/docs/develop/api/ai_audit/#imageAudit/",
+        "subContent": [
+          {
+            "apiName": "imageAudit",
+            "apiUrl": "/docs/develop/api/ai_audit/#imageAudit/",
+            "id": "imageAudit",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "图像识别",
+        "subCategoryUrl": "/docs/develop/api/ai_classify/#advancedGeneralIdentify/",
+        "subContent": [
+          {
+            "apiName": "advancedGeneralIdentify",
+            "apiUrl": "/docs/develop/api/ai_classify/#advancedGeneralIdentify/",
+            "id": "advancedGeneralIdentify",
+            "params": []
+          },
+          {
+            "apiName": "objectDetectIdentify",
+            "apiUrl": "/docs/develop/api/ai_classify/#objectDetectIdentify/",
+            "id": "objectDetectIdentify",
+            "params": []
+          },
+          {
+            "apiName": "carClassify",
+            "apiUrl": "/docs/develop/api/ai_classify/#carClassify/",
+            "id": "carClassify",
+            "params": []
+          },
+          {
+            "apiName": "dishClassify",
+            "apiUrl": "/docs/develop/api/ai_classify/#dishClassify/",
+            "id": "dishClassify",
+            "params": []
+          },
+          {
+            "apiName": "logoClassify",
+            "apiUrl": "/docs/develop/api/ai_classify/#logoClassify/",
+            "id": "logoClassify",
+            "params": []
+          },
+          {
+            "apiName": "animalClassify",
+            "apiUrl": "/docs/develop/api/ai_classify/#animalClassify/",
+            "id": "animalClassify",
+            "params": []
+          },
+          {
+            "apiName": "plantClassify",
+            "apiUrl": "/docs/develop/api/ai_classify/#plantClassify/",
+            "id": "plantClassify",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "语音识别",
+        "subCategoryUrl": "/docs/develop/api/ai_voice/#getVoiceRecognizer/",
+        "subContent": [
+          {
+            "apiName": "getVoiceRecognizer",
+            "apiUrl": "/docs/develop/api/ai_voice/#getVoiceRecognizer/",
+            "id": "getVoiceRecognizer",
+            "params": [
+              {
+                "name": "start",
+                "type": "options",
+                "required": "开始"
+              },
+              {
+                "name": "stop",
+                "type": "",
+                "required": "停止"
+              },
+              {
+                "name": "cancel",
+                "type": "",
+                "required": "取消"
+              },
+              {
+                "name": "onStart",
+                "type": "callback",
+                "required": "引擎准备就绪，可以开始说话"
+              },
+              {
+                "name": "onRecognize",
+                "type": "callback",
+                "required": "有识别结果返回"
+              },
+              {
+                "name": "onFinish",
+                "type": "callback",
+                "required": "识别完成"
+              },
+              {
+                "name": "onError",
+                "type": "callback",
+                "required": "识别遇到错误"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "媒体",
+    "content": [
+      {
+        "subCategoryName": "图片",
+        "subCategoryUrl": "/docs/develop/api/media_image/#chooseImage/",
+        "subContent": [
+          {
+            "apiName": "chooseImage",
+            "apiUrl": "/docs/develop/api/media_image/#chooseImage/",
+            "id": "chooseImage",
+            "params": []
+          },
+          {
+            "apiName": "previewImage",
+            "apiUrl": "/docs/develop/api/media_image/#previewImage/",
+            "id": "previewImage",
+            "params": []
+          },
+          {
+            "apiName": "getImageInfo",
+            "apiUrl": "/docs/develop/api/media_image/#getImageInfo/",
+            "id": "getImageInfo",
+            "params": []
+          },
+          {
+            "apiName": "saveImageToPhotosAlbum",
+            "apiUrl": "/docs/develop/api/media_image/#saveImageToPhotosAlbum/",
+            "id": "saveImageToPhotosAlbum",
+            "params": []
+          },
+          {
+            "apiName": "recognizeImage",
+            "apiUrl": "/docs/develop/api/media_image/#recognizeImage/",
+            "id": "recognizeImage",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "录音管理",
+        "subCategoryUrl": "/docs/develop/api/media_recorder/#getRecorderManager/",
+        "subContent": [
+          {
+            "apiName": "getRecorderManager",
+            "apiUrl": "/docs/develop/api/media_recorder/#getRecorderManager/",
+            "id": "getRecorderManager",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "背景音频管理播放",
+        "subCategoryUrl": "/docs/develop/api/media_backgroundaudiomanager/#getBackgroundAudioManager/",
+        "subContent": [
+          {
+            "apiName": "getBackgroundAudioManager",
+            "apiUrl": "/docs/develop/api/media_backgroundaudiomanager/#getBackgroundAudioManager/",
+            "id": "getBackgroundAudioManager",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "音频组件控制",
+        "subCategoryUrl": "/docs/develop/api/media_createinneraudiocontext/#createInnerAudioContext/",
+        "subContent": [
+          {
+            "apiName": "createInnerAudioContext",
+            "apiUrl": "/docs/develop/api/media_createinneraudiocontext/#createInnerAudioContext/",
+            "id": "createInnerAudioContext",
+            "params": []
+          },
+          {
+            "apiName": "setInnerAudioOption",
+            "apiUrl": "/docs/develop/api/media_createinneraudiocontext/#setInnerAudioOption/",
+            "id": "setInnerAudioOption",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "视频",
+        "subCategoryUrl": "/docs/develop/api/media_video/#chooseVideo/",
+        "subContent": [
+          {
+            "apiName": "chooseVideo",
+            "apiUrl": "/docs/develop/api/media_video/#chooseVideo/",
+            "id": "chooseVideo",
+            "params": []
+          },
+          {
+            "apiName": "saveVideoToPhotosAlbum",
+            "apiUrl": "/docs/develop/api/media_video/#saveVideoToPhotosAlbum/",
+            "id": "saveVideoToPhotosAlbum",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "视频组件控制",
+        "subCategoryUrl": "/docs/develop/api/media_videocontext/#createVideoContext/",
+        "subContent": [
+          {
+            "apiName": "createVideoContext",
+            "apiUrl": "/docs/develop/api/media_videocontext/#createVideoContext/",
+            "id": "createVideoContext",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "直播组件控制",
+        "subCategoryUrl": "/docs/develop/api/media_liveplayercontext/#createLivePlayerContext/",
+        "subContent": [
+          {
+            "apiName": "createLivePlayerContext",
+            "apiUrl": "/docs/develop/api/media_liveplayercontext/#createLivePlayerContext/",
+            "id": "createLivePlayerContext",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "相机组件控制",
+        "subCategoryUrl": "/docs/develop/api/media_cameracontext/#createCameraContext/",
+        "subContent": [
+          {
+            "apiName": "createCameraContext",
+            "apiUrl": "/docs/develop/api/media_cameracontext/#createCameraContext/",
+            "id": "createCameraContext",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "AR 相机组件控制",
+        "subCategoryUrl": "/docs/develop/api/media_arcameracontext/#createARCameraContext/",
+        "subContent": [
+          {
+            "apiName": "createARCameraContext",
+            "apiUrl": "/docs/develop/api/media_arcameracontext/#createARCameraContext/",
+            "id": "createARCameraContext",
+            "params": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "文件",
+    "content": [
+      {
+        "subCategoryName": "保存、获取文件",
+        "subCategoryUrl": "/docs/develop/api/file_save/#saveFile/",
+        "subContent": [
+          {
+            "apiName": "saveFile",
+            "apiUrl": "/docs/develop/api/file_save/#saveFile/",
+            "id": "saveFile",
+            "params": []
+          },
+          {
+            "apiName": "getFileInfo",
+            "apiUrl": "/docs/develop/api/file_save/#getFileInfo/",
+            "id": "getFileInfo",
+            "params": []
+          },
+          {
+            "apiName": "getSavedFileList",
+            "apiUrl": "/docs/develop/api/file_save/#getSavedFileList/",
+            "id": "getSavedFileList",
+            "params": []
+          },
+          {
+            "apiName": "getSavedFileInfo",
+            "apiUrl": "/docs/develop/api/file_save/#getSavedFileInfo/",
+            "id": "getSavedFileInfo",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "删除文件",
+        "subCategoryUrl": "/docs/develop/api/file_remove/#removeSavedFile/",
+        "subContent": [
+          {
+            "apiName": "removeSavedFile",
+            "apiUrl": "/docs/develop/api/file_remove/#removeSavedFile/",
+            "id": "removeSavedFile",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "打开新的文件页面",
+        "subCategoryUrl": "/docs/develop/api/file_open/#openDocument/",
+        "subContent": [
+          {
+            "apiName": "openDocument",
+            "apiUrl": "/docs/develop/api/file_open/#openDocument/",
+            "id": "openDocument",
+            "params": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "数据存储",
+    "content": [
+      {
+        "subCategoryName": "存储数据",
+        "subCategoryUrl": "/docs/develop/api/storage_save/#setStorage/",
+        "subContent": [
+          {
+            "apiName": "setStorage",
+            "apiUrl": "/docs/develop/api/storage_save/#setStorage/",
+            "id": "setStorage",
+            "params": []
+          },
+          {
+            "apiName": "setStorageSync",
+            "apiUrl": "/docs/develop/api/storage_save/#setStorageSync/",
+            "id": "setStorageSync",
+            "params": []
+          },
+          {
+            "apiName": "getStorage",
+            "apiUrl": "/docs/develop/api/storage_save/#getStorage/",
+            "id": "getStorage",
+            "params": []
+          },
+          {
+            "apiName": "getStorageSync",
+            "apiUrl": "/docs/develop/api/storage_save/#getStorageSync/",
+            "id": "getStorageSync",
+            "params": []
+          },
+          {
+            "apiName": "getStorageInfo",
+            "apiUrl": "/docs/develop/api/storage_save/#getStorageInfo/",
+            "id": "getStorageInfo",
+            "params": []
+          },
+          {
+            "apiName": "getStorageInfoSync",
+            "apiUrl": "/docs/develop/api/storage_save/#getStorageInfoSync/",
+            "id": "getStorageInfoSync",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "存储清理",
+        "subCategoryUrl": "/docs/develop/api/storage_remove/#removeStorage/",
+        "subContent": [
+          {
+            "apiName": "removeStorage",
+            "apiUrl": "/docs/develop/api/storage_remove/#removeStorage/",
+            "id": "removeStorage",
+            "params": []
+          },
+          {
+            "apiName": "removeStorageSync",
+            "apiUrl": "/docs/develop/api/storage_remove/#removeStorageSync/",
+            "id": "removeStorageSync",
+            "params": []
+          },
+          {
+            "apiName": "clearStorage",
+            "apiUrl": "/docs/develop/api/storage_remove/#clearStorage/",
+            "id": "clearStorage",
+            "params": []
+          },
+          {
+            "apiName": "clearStorageSync",
+            "apiUrl": "/docs/develop/api/storage_remove/#clearStorageSync/",
+            "id": "clearStorageSync",
+            "params": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "位置",
+    "content": [
+      {
+        "subCategoryName": "获取位置",
+        "subCategoryUrl": "/docs/develop/api/location_get/#getLocation/",
+        "subContent": [
+          {
+            "apiName": "getLocation",
+            "apiUrl": "/docs/develop/api/location_get/#getLocation/",
+            "id": "getLocation",
+            "params": [
+              {
+                "name": "type",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "altitude",
+                "type": "Boolean",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "是"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          },
+          {
+            "apiName": "chooseLocation",
+            "apiUrl": "/docs/develop/api/location_get/#chooseLocation/",
+            "id": "chooseLocation",
+            "params": [
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subCategoryName": "查看位置",
+        "subCategoryUrl": "/docs/develop/api/location_open/#openLocation/",
+        "subContent": [
+          {
+            "apiName": "openLocation",
+            "apiUrl": "/docs/develop/api/location_open/#openLocation/",
+            "id": "openLocation",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "地图组件控制",
+        "subCategoryUrl": "/docs/develop/api/location_map/#createMapContext/",
+        "subContent": [
+          {
+            "apiName": "createMapContext",
+            "apiUrl": "/docs/develop/api/location_map/#createMapContext/",
+            "id": "createMapContext",
+            "params": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "界面",
+    "content": [
+      {
+        "subCategoryName": "绘图",
+        "subCategoryUrl": "/docs/develop/api/show_canvas/#坐标系/",
+        "subContent": [
+          {
+            "apiName": "createCanvasContext",
+            "apiUrl": "/docs/develop/api/show_canvas/#createCanvasContext/",
+            "id": "createCanvasContext",
+            "params": []
+          },
+          {
+            "apiName": "canvasGetImageData",
+            "apiUrl": "/docs/develop/api/show_canvas/#canvasGetImageData/",
+            "id": "canvasGetImageData",
+            "params": []
+          },
+          {
+            "apiName": "canvasPutImageData",
+            "apiUrl": "/docs/develop/api/show_canvas/#canvasPutImageData/",
+            "id": "canvasPutImageData",
+            "params": []
+          },
+          {
+            "apiName": "canvasToTempFilePath",
+            "apiUrl": "/docs/develop/api/show_canvas/#canvasToTempFilePath-OBJECT-this/",
+            "id": "canvasToTempFilePath-OBJECT-this",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "交互反馈",
+        "subCategoryUrl": "/docs/develop/api/show_toast/#showToast/",
+        "subContent": [
+          {
+            "apiName": "showToast",
+            "apiUrl": "/docs/develop/api/show_toast/#showToast/",
+            "id": "showToast",
+            "params": []
+          },
+          {
+            "apiName": "showLoading",
+            "apiUrl": "/docs/develop/api/show_toast/#showLoading/",
+            "id": "showLoading",
+            "params": []
+          },
+          {
+            "apiName": "hideToast",
+            "apiUrl": "/docs/develop/api/show_toast/#hideToast/",
+            "id": "hideToast",
+            "params": []
+          },
+          {
+            "apiName": "hideLoading",
+            "apiUrl": "/docs/develop/api/show_toast/#hideLoading/",
+            "id": "hideLoading",
+            "params": []
+          },
+          {
+            "apiName": "showModal",
+            "apiUrl": "/docs/develop/api/show_toast/#showModal/",
+            "id": "showModal",
+            "params": []
+          },
+          {
+            "apiName": "showActionSheet",
+            "apiUrl": "/docs/develop/api/show_toast/#showActionSheet/",
+            "id": "showActionSheet",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "导航栏",
+        "subCategoryUrl": "/docs/develop/api/show_navigationbar/#setNavigationBarTitle/",
+        "subContent": [
+          {
+            "apiName": "setNavigationBarTitle",
+            "apiUrl": "/docs/develop/api/show_navigationbar/#setNavigationBarTitle/",
+            "id": "setNavigationBarTitle",
+            "params": []
+          },
+          {
+            "apiName": "showNavigationBarLoading",
+            "apiUrl": "/docs/develop/api/show_navigationbar/#showNavigationBarLoading/",
+            "id": "showNavigationBarLoading",
+            "params": []
+          },
+          {
+            "apiName": "hideNavigationBarLoading",
+            "apiUrl": "/docs/develop/api/show_navigationbar/#hideNavigationBarLoading/",
+            "id": "hideNavigationBarLoading",
+            "params": []
+          },
+          {
+            "apiName": "setNavigationBarColor",
+            "apiUrl": "/docs/develop/api/show_navigationbar/#setNavigationBarColor/",
+            "id": "setNavigationBarColor",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "设置tabBar",
+        "subCategoryUrl": "/docs/develop/api/show_tabbar/#setTabBarBadge/",
+        "subContent": [
+          {
+            "apiName": "setTabBarBadge",
+            "apiUrl": "/docs/develop/api/show_tabbar/#setTabBarBadge/",
+            "id": "setTabBarBadge",
+            "params": []
+          },
+          {
+            "apiName": "removeTabBarBadge",
+            "apiUrl": "/docs/develop/api/show_tabbar/#removeTabBarBadge/",
+            "id": "removeTabBarBadge",
+            "params": []
+          },
+          {
+            "apiName": "showTabBarRedDot",
+            "apiUrl": "/docs/develop/api/show_tabbar/#showTabBarRedDot/",
+            "id": "showTabBarRedDot",
+            "params": []
+          },
+          {
+            "apiName": "hideTabBarRedDot",
+            "apiUrl": "/docs/develop/api/show_tabbar/#hideTabBarRedDot/",
+            "id": "hideTabBarRedDot",
+            "params": []
+          },
+          {
+            "apiName": "setTabBarStyle",
+            "apiUrl": "/docs/develop/api/show_tabbar/#setTabBarStyle/",
+            "id": "setTabBarStyle",
+            "params": []
+          },
+          {
+            "apiName": "setTabBarItem",
+            "apiUrl": "/docs/develop/api/show_tabbar/#setTabBarItem/",
+            "id": "setTabBarItem",
+            "params": []
+          },
+          {
+            "apiName": "showTabBar",
+            "apiUrl": "/docs/develop/api/show_tabbar/#showTabBar/",
+            "id": "showTabBar",
+            "params": []
+          },
+          {
+            "apiName": "hideTabBar",
+            "apiUrl": "/docs/develop/api/show_tabbar/#hideTabBar/",
+            "id": "hideTabBar",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "导航",
+        "subCategoryUrl": "/docs/develop/api/show_tab/#navigateTo/",
+        "subContent": [
+          {
+            "apiName": "navigateTo",
+            "apiUrl": "/docs/develop/api/show_tab/#navigateTo/",
+            "id": "navigateTo",
+            "params": []
+          },
+          {
+            "apiName": "redirectTo",
+            "apiUrl": "/docs/develop/api/show_tab/#redirectTo/",
+            "id": "redirectTo",
+            "params": []
+          },
+          {
+            "apiName": "switchTab",
+            "apiUrl": "/docs/develop/api/show_tab/#switchTab/",
+            "id": "switchTab",
+            "params": []
+          },
+          {
+            "apiName": "navigateBack",
+            "apiUrl": "/docs/develop/api/show_tab/#navigateBack/",
+            "id": "navigateBack",
+            "params": []
+          },
+          {
+            "apiName": "reLaunch",
+            "apiUrl": "/docs/develop/api/show_tab/#reLaunch/",
+            "id": "reLaunch",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "动画",
+        "subCategoryUrl": "/docs/develop/api/show_createanimation/#createAnimation/",
+        "subContent": [
+          {
+            "apiName": "createAnimation",
+            "apiUrl": "/docs/develop/api/show_createanimation/#createAnimation/",
+            "id": "createAnimation",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "位置",
+        "subCategoryUrl": "/docs/develop/api/show_pagescrollto/#pageScrollTo/",
+        "subContent": [
+          {
+            "apiName": "pageScrollTo",
+            "apiUrl": "/docs/develop/api/show_pagescrollto/#pageScrollTo/",
+            "id": "pageScrollTo",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "背景",
+        "subCategoryUrl": "/docs/develop/api/show_background/#setBackgroundColor/",
+        "subContent": [
+          {
+            "apiName": "setBackgroundColor",
+            "apiUrl": "/docs/develop/api/show_background/#setBackgroundColor/",
+            "id": "setBackgroundColor",
+            "params": [
+              {
+                "name": "backgroundColor",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "backgroundColorTop",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "backgroundColorBottom",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          },
+          {
+            "apiName": "setBackgroundTextStyle",
+            "apiUrl": "/docs/develop/api/show_background/#setBackgroundTextStyle/",
+            "id": "setBackgroundTextStyle",
+            "params": [
+              {
+                "name": "textStyle",
+                "type": "String",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "是"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subCategoryName": "下拉刷新",
+        "subCategoryUrl": "/docs/develop/api/show_pull/#onPullDownRefresh/",
+        "subContent": [
+          {
+            "apiName": "startPullDownRefresh",
+            "apiUrl": "/docs/develop/api/show_pull/#startPullDownRefresh/",
+            "id": "startPullDownRefresh",
+            "params": []
+          },
+          {
+            "apiName": "stopPullDownRefresh",
+            "apiUrl": "/docs/develop/api/show_pull/#stopPullDownRefresh/",
+            "id": "stopPullDownRefresh",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "自定义组件",
+        "subCategoryUrl": "/docs/develop/api/custom_component/#nextTick/",
+        "subContent": [
+          {
+            "apiName": "nextTick",
+            "apiUrl": "/docs/develop/api/custom_component/#nextTick/",
+            "id": "nextTick",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "节点信息",
+        "subCategoryUrl": "/docs/develop/api/show_query/#createIntersectionObserver-this-options/",
+        "subContent": [
+          {
+            "apiName": "createIntersectionObserver",
+            "apiUrl": "/docs/develop/api/show_query/#createIntersectionObserver-this-options/",
+            "id": "createIntersectionObserver-this-options",
+            "params": []
+          },
+          {
+            "apiName": "createSelectorQuery",
+            "apiUrl": "/docs/develop/api/show_query/#createSelectorQuery/",
+            "id": "createSelectorQuery",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "添加到我的小程序引导",
+        "subCategoryUrl": "/docs/develop/api/nacomponent/#showFavoriteGuide/",
+        "subContent": [
+          {
+            "apiName": "showFavoriteGuide",
+            "apiUrl": "/docs/develop/api/nacomponent/#showFavoriteGuide/",
+            "id": "showFavoriteGuide",
+            "params": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "设备",
+    "content": [
+      {
+        "subCategoryName": "系统信息",
+        "subCategoryUrl": "/docs/develop/api/device_sys/#getSystemInfo/",
+        "subContent": [
+          {
+            "apiName": "getSystemInfo",
+            "apiUrl": "/docs/develop/api/device_sys/#getSystemInfo/",
+            "id": "getSystemInfo",
+            "params": []
+          },
+          {
+            "apiName": "getSystemInfoSync",
+            "apiUrl": "/docs/develop/api/device_sys/#getSystemInfoSync/",
+            "id": "getSystemInfoSync",
+            "params": []
+          },
+          {
+            "apiName": "getEnvInfoSync",
+            "apiUrl": "/docs/develop/api/device_sys/#getEnvInfoSync/",
+            "id": "getEnvInfoSync",
+            "params": []
+          },
+          {
+            "apiName": "canIUse",
+            "apiUrl": "/docs/develop/api/device_sys/#canIUse/",
+            "id": "canIUse",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "内存",
+        "subCategoryUrl": "/docs/develop/api/device_onmemory/#onMemoryWarning/",
+        "subContent": [
+          {
+            "apiName": "onMemoryWarning",
+            "apiUrl": "/docs/develop/api/device_onmemory/#onMemoryWarning/",
+            "id": "onMemoryWarning",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "网络状态",
+        "subCategoryUrl": "/docs/develop/api/device_network/#getNetworkType/",
+        "subContent": [
+          {
+            "apiName": "getNetworkType",
+            "apiUrl": "/docs/develop/api/device_network/#getNetworkType/",
+            "id": "getNetworkType",
+            "params": []
+          },
+          {
+            "apiName": "onNetworkStatusChange",
+            "apiUrl": "/docs/develop/api/device_network/#onNetworkStatusChange/",
+            "id": "onNetworkStatusChange",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "加速度计",
+        "subCategoryUrl": "/docs/develop/api/device_accelerometer/#onAccelerometerChange/",
+        "subContent": [
+          {
+            "apiName": "onAccelerometerChange",
+            "apiUrl": "/docs/develop/api/device_accelerometer/#onAccelerometerChange/",
+            "id": "onAccelerometerChange",
+            "params": []
+          },
+          {
+            "apiName": "startAccelerometer",
+            "apiUrl": "/docs/develop/api/device_accelerometer/#startAccelerometer/",
+            "id": "startAccelerometer",
+            "params": []
+          },
+          {
+            "apiName": "stopAccelerometer",
+            "apiUrl": "/docs/develop/api/device_accelerometer/#stopAccelerometer/",
+            "id": "stopAccelerometer",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "罗盘",
+        "subCategoryUrl": "/docs/develop/api/device_compass/#onCompassChange/",
+        "subContent": [
+          {
+            "apiName": "onCompassChange",
+            "apiUrl": "/docs/develop/api/device_compass/#onCompassChange/",
+            "id": "onCompassChange",
+            "params": []
+          },
+          {
+            "apiName": "startCompass",
+            "apiUrl": "/docs/develop/api/device_compass/#startCompass/",
+            "id": "startCompass",
+            "params": []
+          },
+          {
+            "apiName": "stopCompass",
+            "apiUrl": "/docs/develop/api/device_compass/#stopCompass/",
+            "id": "stopCompass",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "扫码",
+        "subCategoryUrl": "/docs/develop/api/device_scan/#scanCode/",
+        "subContent": [
+          {
+            "apiName": "scanCode",
+            "apiUrl": "/docs/develop/api/device_scan/#scanCode/",
+            "id": "scanCode",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "屏幕亮度",
+        "subCategoryUrl": "/docs/develop/api/device_screen/#setScreenBrightness/",
+        "subContent": [
+          {
+            "apiName": "setScreenBrightness",
+            "apiUrl": "/docs/develop/api/device_screen/#setScreenBrightness/",
+            "id": "setScreenBrightness",
+            "params": []
+          },
+          {
+            "apiName": "getScreenBrightness",
+            "apiUrl": "/docs/develop/api/device_screen/#getScreenBrightness/",
+            "id": "getScreenBrightness",
+            "params": []
+          },
+          {
+            "apiName": "setKeepScreenOn",
+            "apiUrl": "/docs/develop/api/device_screen/#setKeepScreenOn/",
+            "id": "setKeepScreenOn",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "用户截屏事件",
+        "subCategoryUrl": "/docs/develop/api/device_capture/#onUserCaptureScreen/",
+        "subContent": [
+          {
+            "apiName": "onUserCaptureScreen",
+            "apiUrl": "/docs/develop/api/device_capture/#onUserCaptureScreen/",
+            "id": "onUserCaptureScreen",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "振动",
+        "subCategoryUrl": "/docs/develop/api/device_vibrate/#vibrateLong/",
+        "subContent": [
+          {
+            "apiName": "vibrateLong",
+            "apiUrl": "/docs/develop/api/device_vibrate/#vibrateLong/",
+            "id": "vibrateLong",
+            "params": []
+          },
+          {
+            "apiName": "vibrateShort",
+            "apiUrl": "/docs/develop/api/device_vibrate/#vibrateShort/",
+            "id": "vibrateShort",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "手机联系人",
+        "subCategoryUrl": "/docs/develop/api/device_phonecontact/#addPhoneContact/",
+        "subContent": [
+          {
+            "apiName": "addPhoneContact",
+            "apiUrl": "/docs/develop/api/device_phonecontact/#addPhoneContact/",
+            "id": "addPhoneContact",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "拨打电话",
+        "subCategoryUrl": "/docs/develop/api/device_call/#makePhoneCall/",
+        "subContent": [
+          {
+            "apiName": "makePhoneCall",
+            "apiUrl": "/docs/develop/api/device_call/#makePhoneCall/",
+            "id": "makePhoneCall",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "剪贴板",
+        "subCategoryUrl": "/docs/develop/api/device_clipboard/#setClipboardData/",
+        "subContent": [
+          {
+            "apiName": "setClipboardData",
+            "apiUrl": "/docs/develop/api/device_clipboard/#setClipboardData/",
+            "id": "setClipboardData",
+            "params": []
+          },
+          {
+            "apiName": "getClipboardData",
+            "apiUrl": "/docs/develop/api/device_clipboard/#getClipboardData/",
+            "id": "getClipboardData",
+            "params": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "第三方平台",
+    "content": [
+      {
+        "subCategoryName": "获取第三方平台数据",
+        "subCategoryUrl": "/docs/develop/api/getextconfig/#getExtConfig/",
+        "subContent": [
+          {
+            "apiName": "getExtConfig",
+            "apiUrl": "/docs/develop/api/getextconfig/#getExtConfig/",
+            "id": "getExtConfig",
+            "params": []
+          },
+          {
+            "apiName": "getExtConfigSync",
+            "apiUrl": "/docs/develop/api/getextconfig/#getExtConfigSync/",
+            "id": "getExtConfigSync",
+            "params": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryName": "开放接口",
+    "content": [
+      {
+        "subCategoryName": "登录",
+        "subCategoryUrl": "/docs/develop/api/open_log/#授权流程说明/",
+        "subContent": [
+          {
+            "apiName": "login",
+            "apiUrl": "/docs/develop/api/open_log/#login/",
+            "id": "login",
+            "params": []
+          },
+          {
+            "apiName": "checkSession",
+            "apiUrl": "/docs/develop/api/open_log/#checkSession/",
+            "id": "checkSession",
+            "params": []
+          },
+          {
+            "apiName": "isLoginSync",
+            "apiUrl": "/docs/develop/api/open_log/#isLoginSync/",
+            "id": "isLoginSync",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "授权",
+        "subCategoryUrl": "/docs/develop/api/open_authorize/#authorize/",
+        "subContent": [
+          {
+            "apiName": "authorize",
+            "apiUrl": "/docs/develop/api/open_authorize/#authorize/",
+            "id": "authorize",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "用户信息",
+        "subCategoryUrl": "/docs/develop/api/open_userinfo/#swanid机制说明/",
+        "subContent": [
+          {
+            "apiName": "getSwanId",
+            "apiUrl": "/docs/develop/api/open_userinfo/#getSwanId/",
+            "id": "getSwanId",
+            "params": []
+          },
+          {
+            "apiName": "getUserInfo",
+            "apiUrl": "/docs/develop/api/open_userinfo/#getUserInfo/",
+            "id": "getUserInfo",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "设置",
+        "subCategoryUrl": "/docs/develop/api/open_setting/#openSetting/",
+        "subContent": [
+          {
+            "apiName": "openSetting",
+            "apiUrl": "/docs/develop/api/open_setting/#openSetting/",
+            "id": "openSetting",
+            "params": []
+          },
+          {
+            "apiName": "getSetting",
+            "apiUrl": "/docs/develop/api/open_setting/#getSetting/",
+            "id": "getSetting",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "分享",
+        "subCategoryUrl": "/docs/develop/api/open_share/#onShareAppMessage/",
+        "subContent": [
+          {
+            "apiName": "openShare",
+            "apiUrl": "/docs/develop/api/open_share/#openShare/",
+            "id": "openShare",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "选择收货地址",
+        "subCategoryUrl": "/docs/develop/api/open_chooseaddress/#chooseAddress/",
+        "subContent": [
+          {
+            "apiName": "chooseAddress",
+            "apiUrl": "/docs/develop/api/open_chooseaddress/#chooseAddress/",
+            "id": "chooseAddress",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "百度收银台支付",
+        "subCategoryUrl": "/docs/develop/api/open_payment/#requestPolymerPayment/",
+        "subContent": [
+          {
+            "apiName": "requestPolymerPayment",
+            "apiUrl": "/docs/develop/api/open_payment/#requestPolymerPayment/",
+            "id": "requestPolymerPayment",
+            "params": [
+              {
+                "name": "orderInfo",
+                "type": "Object",
+                "required": "是"
+              },
+              {
+                "name": "bannedChannels",
+                "type": "StringArray",
+                "required": "否"
+              },
+              {
+                "name": "success",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "fail",
+                "type": "Function",
+                "required": "否"
+              },
+              {
+                "name": "complete",
+                "type": "Function",
+                "required": "否"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "subCategoryName": "获取发票抬头",
+        "subCategoryUrl": "/docs/develop/api/open_chooseinvoicetitle/#chooseInvoiceTitle/",
+        "subContent": [
+          {
+            "apiName": "chooseInvoiceTitle",
+            "apiUrl": "/docs/develop/api/open_chooseinvoicetitle/#chooseInvoiceTitle/",
+            "id": "chooseInvoiceTitle",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "打开小程序",
+        "subCategoryUrl": "/docs/develop/api/open_smartprogram/#navigateToSmartProgram/",
+        "subContent": [
+          {
+            "apiName": "navigateToSmartProgram",
+            "apiUrl": "/docs/develop/api/open_smartprogram/#navigateToSmartProgram/",
+            "id": "navigateToSmartProgram",
+            "params": []
+          },
+          {
+            "apiName": "navigateBackSmartProgram",
+            "apiUrl": "/docs/develop/api/open_smartprogram/#navigateBackSmartProgram/",
+            "id": "navigateBackSmartProgram",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "页面 meta 信息",
+        "subCategoryUrl": "/docs/develop/api/seo/#setMetaDescription/",
+        "subContent": [
+          {
+            "apiName": "setMetaDescription",
+            "apiUrl": "/docs/develop/api/seo/#setMetaDescription/",
+            "id": "setMetaDescription",
+            "params": []
+          },
+          {
+            "apiName": "setMetaKeywords",
+            "apiUrl": "/docs/develop/api/seo/#setMetaKeywords/",
+            "id": "setMetaKeywords",
+            "params": []
+          },
+          {
+            "apiName": "setDocumentTitle",
+            "apiUrl": "/docs/develop/api/seo/#setDocumentTitle/",
+            "id": "setDocumentTitle",
+            "params": []
+          },
+          {
+            "apiName": "setPageInfo",
+            "apiUrl": "/docs/develop/api/seo/#setPageInfo/",
+            "id": "setPageInfo",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "分包预下载",
+        "subCategoryUrl": "/docs/develop/api/open_preloadsubpackage/#loadSubPackage/",
+        "subContent": [
+          {
+            "apiName": "loadSubPackage",
+            "apiUrl": "/docs/develop/api/open_preloadsubpackage/#loadSubPackage/",
+            "id": "loadSubPackage",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "更新",
+        "subCategoryUrl": "/docs/develop/api/get/#getUpdateManager/",
+        "subContent": [
+          {
+            "apiName": "getUpdateManager",
+            "apiUrl": "/docs/develop/api/get/#getUpdateManager/",
+            "id": "getUpdateManager",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "调试",
+        "subCategoryUrl": "/docs/develop/api/debug/#setEnableDebug/",
+        "subContent": [
+          {
+            "apiName": "setEnableDebug",
+            "apiUrl": "/docs/develop/api/debug/#setEnableDebug/",
+            "id": "setEnableDebug",
+            "params": []
+          }
+        ]
+      },
+      {
+        "subCategoryName": "数据分析",
+        "subCategoryUrl": "/docs/develop/api/data/#reportAnalytics/",
+        "subContent": [
+          {
+            "apiName": "reportAnalytics",
+            "apiUrl": "/docs/develop/api/data/#reportAnalytics/",
+            "id": "reportAnalytics",
+            "params": []
+          }
+        ]
+      }
+    ]
+  }
+]
