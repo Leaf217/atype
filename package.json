@@ -24,7 +24,8 @@
     "async": "^2.6.1",
     "cheerio": "^1.0.0-rc.2",
     "commander": "^2.17.1",
-    "superagent": "^3.8.3"
+    "superagent": "^3.8.3",
+    "superagent-proxy": "^2.0.0"
   },
   "devDependencies": {}
 }
